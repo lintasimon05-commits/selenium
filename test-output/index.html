@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 8 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
+              <span class="suite-name border-failed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">12 methods, 8 failed,   4 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.saucecode.test.CartPageTest" class="method navigator-link" hash-for-method="buttonenable">buttonenable</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.saucecode.test.CheckoutTest" class="method navigator-link" hash-for-method="checkoutaction">checkoutaction</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.saucecode.test.CartPageTest" class="method navigator-link" hash-for-method="checkoutbutton">checkoutbutton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.saucecode.test.CheckoutTest" class="method navigator-link" hash-for-method="checkouttext">checkouttext</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.saucecode.test.CartPageTest" class="method navigator-link" hash-for-method="itemincart">itemincart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.saucecode.test.InventoryTest" class="method navigator-link" hash-for-method="linkcount">linkcount</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.saucecode.test.CartPageTest" class="method navigator-link" hash-for-method="textverify">textverify</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.saucecode.test.InventoryTest" class="method navigator-link" hash-for-method="textverify">textverify</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.saucecode.test.CartPageTest" class="method navigator-link" hash-for-method="buttonlist">buttonlist</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.saucecode.test.InventoryTest" class="method navigator-link" hash-for-method="itemtocart">itemtocart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.saucecode.test.SauceLoginTest" class="method navigator-link" hash-for-method="titleverification">titleverification</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.saucecode.test.SauceLoginTest" class="method navigator-link" hash-for-method="validlogin">validlogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.saucecode.test.CheckoutTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkoutaction">
+                  </a> <!-- checkoutaction -->
+                  <span class="method-name">checkoutaction</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#first\-name&quot;}
+  (Session info: chrome=154.0.8037.93)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: &apos;4.45.0&apos;, revision: &apos;cd6a3cd cd6a3cdfca6970f62e5bc8344109d0fe0e2af05e&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;26.3.1&apos;, java.version: &apos;21.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [20a9718d2df7f960293c88d51d78806c, findElement {using=id, value=first-name}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.93, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: /var/folders/_x/s37vvg593d3...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56259}, goog:processID: 43904, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:56259/devtoo..., se:cdpVersion: 154.0.8037.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 20a9718d2df7f960293c88d51d78806c
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:575)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:173)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:396)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:390)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.sendKeys(Unknown Source)
+	at com.saucecode.page.CheckoutPage.enterinfo(CheckoutPage.java:50)
+	at com.saucecode.test.CheckoutTest.checkoutaction(CheckoutTest.java:19)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkouttext">
+                  </a> <!-- checkouttext -->
+                  <span class="method-name">checkouttext</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Checkout:Your information] but found [&lt;html lang=&quot;en&quot;&gt;&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;link rel=&quot;icon&quot; href=&quot;/favicon.ico&quot;&gt;
+  &lt;meta name=&quot;robots&quot; content=&quot;noindex&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+  &lt;meta name=&quot;theme-color&quot; content=&quot;#ffffff&quot;&gt;
+  &lt;meta name=&quot;description&quot; content=&quot;Sauce Labs Swag Labs app&quot;&gt;
+  &lt;link rel=&quot;apple-touch-icon&quot; href=&quot;/icon-192x192.png&quot;&gt;
+  &lt;link rel=&quot;manifest&quot; href=&quot;/manifest.json&quot;&gt;
+
+  &lt;!-- Single Page Apps for GitHub Pages --&gt;
+  &lt;script type=&quot;text/javascript&quot;&gt;
+    // https://github.com/rafgraph/spa-github-pages
+    (function(l) {
+      if (l.search[1] === &apos;/&apos; ) {
+        var decoded = l.search.slice(1).split(&apos;&amp;&apos;).map(function(s) {
+          return s.replace(/~and~/g, &apos;&amp;&apos;)
+        }).join(&apos;?&apos;);
+        window.history.replaceState(null, null,
+                l.pathname.slice(0, -1) + decoded + l.hash
+        );
+      }
+    }(window.location))
+  &lt;/script&gt;
+
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&amp;amp;family=DM+Sans:wght@400;500&quot;&gt;
+  &lt;title&gt;Swag Labs&lt;/title&gt;
+  &lt;script type=&quot;module&quot; crossorigin=&quot;&quot; src=&quot;/assets/index-D3OxT1jE.js&quot;&gt;&lt;/script&gt;
+  &lt;link rel=&quot;stylesheet&quot; crossorigin=&quot;&quot; href=&quot;/assets/index-aSZoiKGF.css&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;noscript&gt;You need to enable JavaScript to run this app.&lt;/noscript&gt;
+  &lt;div id=&quot;root&quot;&gt;&lt;div id=&quot;page_wrapper&quot;&gt;&lt;div id=&quot;contents_wrapper&quot;&gt;&lt;header id=&quot;header_container&quot; class=&quot;header_container inventory_details&quot; data-test=&quot;header-container&quot;&gt;&lt;div class=&quot;primary_header&quot; data-test=&quot;primary-header&quot;&gt;&lt;div id=&quot;menu_button_container&quot;&gt;&lt;div&gt;&lt;div&gt;&lt;div class=&quot;bm-burger-button&quot; style=&quot;z-index: 1000;&quot;&gt;&lt;button type=&quot;button&quot; id=&quot;react-burger-menu-btn&quot; style=&quot;position: absolute; left: 0px; top: 0px; z-index: 1; width: 100%; height: 100%; margin: 0px; padding: 0px; border-width: medium; border-style: none; border-color: currentcolor; border-image: none; font-size: 0px; background: transparent; cursor: pointer;&quot;&gt;Open Menu&lt;/button&gt;&lt;img class=&quot;bm-icon&quot; alt=&quot;Open Menu&quot; data-test=&quot;open-menu&quot; srcset=&quot;data:image/svg+xml,%3csvg%20width=&apos;32&apos;%20height=&apos;32&apos;%20viewBox=&apos;0%200%2016%2016&apos;%20fill=&apos;none&apos;%20xmlns=&apos;http://www.w3.org/2000/svg&apos;%3e%3cpath%20fill-rule=&apos;evenodd&apos;%20clip-rule=&apos;evenodd&apos;%20d=&apos;M0.666626%202.83333C0.666626%202.3731%201.00863%202%201.43051%202H14.5694C14.9913%202%2015.3333%202.3731%2015.3333%202.83333C15.3333%203.29357%2014.9913%203.66667%2014.5694%203.66667H1.43051C1.00863%203.66667%200.666626%203.29357%200.666626%202.83333ZM0.666626%207.5C0.666626%207.03976%201.00863%206.66667%201.43051%206.66667H14.5694C14.9913%206.66667%2015.3333%207.03976%2015.3333%207.5C15.3333%207.96024%2014.9913%208.33333%2014.5694%208.33333H1.43051C1.00863%208.33333%200.666626%207.96024%200.666626%207.5ZM1.43051%2011.3333C1.00863%2011.3333%200.666626%2011.7064%200.666626%2012.1667C0.666626%2012.6269%201.00863%2013%201.43051%2013H14.5694C14.9913%2013%2015.3333%2012.6269%2015.3333%2012.1667C15.3333%2011.7064%2014.9913%2011.3333%2014.5694%2011.3333H1.43051Z&apos;%20fill=&apos;%23132322&apos;%20/%3e%3c/svg%3e&quot; src=&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDkuMC1jMDAwIDc5LmRhNGE3ZTVlZiwgMjAyMi8xMS8yMi0xMzo1MDowNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDI0LjEgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6QTA3QzBCMEVBRUYzMTFFREIwRThFMzc3OTlDRTMyNUIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6QTA3QzBCMEZBRUYzMTFFREIwRThFMzc3OTlDRTMyNUIiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpBMDdDMEIwQ0FFRjMxMUVEQjBFOEUzNzc5OUNFMzI1QiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpBMDdDMEIwREFFRjMxMUVEQjBFOEUzNzc5OUNFMzI1QiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pq0LVkQAAAERSURBVHjaYvz//z/DQAImhgEGow5gARE379wx8IuN2f/2/XsBeliqqqj4YMHkKYHqKioXwCEwb+mSAnpZDgK3799XmL9sWT48CrQ1NS/QO+gtTUwOgmhGWDY8c+GCw9NnzxToYbm0lNQDEwODAygOGM2Gow4Y0ILo+YsXCgtWLM//+OkzXcoCfj7eDwkRURMlJcQfgB0wf/mygr6ZM/Pp6XNg7mOsKiwqGBxRkBAZNQFEf/r8hZ8elvLx8nxMiIyeMFoQjTpg8BREA1kdgx2wcdu2hOSiwvn09HlfY1NhXHj4BHAUHDt9yoHeQX/t5k19eBpIio6ZAGoo0styYUHBD4lRURNHC6JRB4w6AAQAAgwA/fRn191dMT8AAAAASUVORK5CYII=&quot; style=&quot;width: 100%; height: 100%;&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;div id=&quot;&quot; class=&quot;bm-menu-wrap&quot; aria-hidden=&quot;true&quot; hidden=&quot;true&quot; style=&quot;position: fixed; right: inherit; z-index: 1100; width: 300px; height: 100%; transform: translate3d(-100%, 0px, 0px); transition: 0.5s;&quot;&gt;&lt;div class=&quot;bm-menu&quot; style=&quot;height: 100%; box-sizing: border-box; overflow: auto;&quot;&gt;&lt;nav class=&quot;bm-item-list&quot; style=&quot;height: 100%;&quot;&gt;&lt;a id=&quot;inventory_sidebar_link&quot; class=&quot;bm-item menu-item&quot; href=&quot;#&quot; data-test=&quot;inventory-sidebar-link&quot; role=&quot;button&quot; tabindex=&quot;-1&quot; style=&quot;display: block;&quot;&gt;All Items&lt;/a&gt;&lt;a id=&quot;dynamic_catalog_sidebar_link&quot; class=&quot;bm-item menu-item&quot; href=&quot;#&quot; data-test=&quot;dynamic-catalog-sidebar-link&quot; role=&quot;button&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;dynamic_catalog_submenu&quot; tabindex=&quot;-1&quot; style=&quot;display: block;&quot;&gt;Dynamic Catalog&lt;span class=&quot;submenu-chevron&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;&lt;/a&gt;&lt;a id=&quot;about_sidebar_link&quot; class=&quot;bm-item menu-item&quot; href=&quot;https://saucelabs.com/&quot; data-test=&quot;about-sidebar-link&quot; tabindex=&quot;-1&quot; style=&quot;display: block;&quot;&gt;About&lt;/a&gt;&lt;a id=&quot;logout_sidebar_link&quot; class=&quot;bm-item menu-item&quot; href=&quot;#&quot; data-test=&quot;logout-sidebar-link&quot; role=&quot;button&quot; tabindex=&quot;-1&quot; style=&quot;display: block;&quot;&gt;Logout&lt;/a&gt;&lt;a id=&quot;reset_sidebar_link&quot; class=&quot;bm-item menu-item&quot; href=&quot;#&quot; data-test=&quot;reset-sidebar-link&quot; role=&quot;button&quot; tabindex=&quot;-1&quot; style=&quot;display: block;&quot;&gt;Reset App State&lt;/a&gt;&lt;/nav&gt;&lt;/div&gt;&lt;div&gt;&lt;div class=&quot;bm-cross-button&quot; style=&quot;position: absolute; width: 24px; height: 24px; right: 8px; top: 8px;&quot;&gt;&lt;button type=&quot;button&quot; id=&quot;react-burger-cross-btn&quot; tabindex=&quot;-1&quot; style=&quot;position: absolute; left: 0px; top: 0px; z-index: 1; width: 100%; height: 100%; margin: 0px; padding: 0px; border-width: medium; border-style: none; border-color: currentcolor; border-image: none; font-size: 0px; background: transparent; cursor: pointer;&quot;&gt;Close Menu&lt;/button&gt;&lt;img class=&quot;bm-cross&quot; alt=&quot;Close Menu&quot; data-test=&quot;close-menu&quot; srcset=&quot;data:image/svg+xml,%3csvg%20width=&apos;32&apos;%20height=&apos;32&apos;%20viewBox=&apos;0%200%2016%2016&apos;%20fill=&apos;none&apos;%20xmlns=&apos;http://www.w3.org/2000/svg&apos;%3e%3cpath%20fill-rule=&apos;evenodd&apos;%20clip-rule=&apos;evenodd&apos;%20d=&apos;M2.22528%202.22552C2.55072%201.90009%203.07835%201.90009%203.40379%202.22552L7.99998%206.82172L12.5962%202.22552C12.9216%201.90009%2013.4493%201.90009%2013.7747%202.22552C14.1001%202.55096%2014.1001%203.0786%2013.7747%203.40403L9.1785%208.00023L13.7747%2012.5964C14.1001%2012.9219%2014.1001%2013.4495%2013.7747%2013.7749C13.4493%2014.1004%2012.9216%2014.1004%2012.5962%2013.7749L7.99998%209.17874L3.40379%2013.7749C3.07835%2014.1004%202.55072%2014.1004%202.22528%2013.7749C1.89984%2013.4495%201.89984%2012.9219%202.22528%2012.5964L6.82147%208.00023L2.22528%203.40403C1.89984%203.0786%201.89984%202.55096%202.22528%202.22552Z&apos;%20fill=&apos;%23132322&apos;%20/%3e%3c/svg%3e&quot; src=&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDkuMC1jMDAwIDc5LmRhNGE3ZTVlZiwgMjAyMi8xMS8yMi0xMzo1MDowNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDI0LjEgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NkNCNjBCQjlBRUY4MTFFREIwRThFMzc3OTlDRTMyNUIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NkNCNjBCQkFBRUY4MTFFREIwRThFMzc3OTlDRTMyNUIiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpBMDdDMEIxNEFFRjMxMUVEQjBFOEUzNzc5OUNFMzI1QiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo2Q0I2MEJCOEFFRjgxMUVEQjBFOEUzNzc5OUNFMzI1QiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PtV59sYAAAFSSURBVHjaYvz//z/DQAImhgEGow7AcMC0uXPrRTTU/3uFh5//8uWLAKUWgMyITEvbDzJzKtBsDAWgRIiMhdXV/sOwZ1jY+c+fPwugqyEWg/SCzEA2E10NRgi42dkfgLFPXbxgEJacvJ+ckADpAekFmQETM9M3uEAwBD4BXe2B5mpSQwKbz0H8T1jMwGoAJY4gxXKcDiDXEaRajtcBpDqCHMsJOoBYR5BrOVEOIOQISiwHYUZiK6PP0Gx1Gku2Qs9qK+fOdeTl4flAjLmMpNSG2ByBDEi1HGs5QE50kBrseEtCgkEGxbjkaFobYiteKS22mSgt202RyneyHEFp2U5p3UGVioUSR1CtYiHXEQzUrFjIcQTVLCfXEVS1nBxHYGim1HJ8johITd1P0AHUsByfIwg6YMqc2Q0ghVFpqfspsRybIyYDzSa7Oh7tmg1bBwAEGAACANpiovW4dgAAAABJRU5ErkJggg==&quot; style=&quot;width: 100%; height: 100%;&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;header_label&quot;&gt;&lt;div class=&quot;app_logo&quot;&gt;Swag Labs&lt;/div&gt;&lt;/div&gt;&lt;div id=&quot;shopping_cart_container&quot; class=&quot;shopping_cart_container&quot;&gt;&lt;a class=&quot;shopping_cart_link&quot; data-test=&quot;shopping-cart-link&quot; role=&quot;button&quot; aria-label=&quot;Cart, 1 items&quot;&gt;&lt;span class=&quot;shopping_cart_badge&quot; data-test=&quot;shopping-cart-badge&quot;&gt;1&lt;/span&gt;&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;header_secondary_container&quot; data-test=&quot;secondary-header&quot;&gt;&lt;div class=&quot;left_component&quot;&gt;&lt;button class=&quot;btn btn_secondary back btn_large inventory_details_back_button&quot; data-test=&quot;back-to-products&quot; id=&quot;back-to-products&quot; name=&quot;back-to-products&quot;&gt;&lt;img class=&quot;back-image&quot; alt=&quot;&quot; src=&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDkuMC1jMDAwIDc5LmRhNGE3ZTVlZiwgMjAyMi8xMS8yMi0xMzo1MDowNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDI0LjEgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6QzQ4Q0IxMkFBRUZDMTFFREIwRThFMzc3OTlDRTMyNUIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6QzQ4Q0IxMkJBRUZDMTFFREIwRThFMzc3OTlDRTMyNUIiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpDNDhDQjEyOEFFRkMxMUVEQjBFOEUzNzc5OUNFMzI1QiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpDNDhDQjEyOUFFRkMxMUVEQjBFOEUzNzc5OUNFMzI1QiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PgbFSzAAAAFGSURBVHjaYvz//z/DQAImhgEGow4gywHLD2zON8gPeN+9dk4/pQ5gJDURzty2or513awGGP/RnH2MdAsBdMurAlMbKY4DUAgQg2dsXV4vm+z4H4anb1nWQKxefHhALSfKAbS0nKADaG05XgfQw3KcDqCX5VgdQE/LQRilIELP50byWheSXYMmUrPo1ZBVuqAqrXABoyS8/fSBgXN90nl6lP/ryyc7GqtqH0ApCT99+ypArwqIj4v7A9a6ABj/DW3rZ9fTMgqkhMUfwHyPtSgGJTrkRAhKlLRMhMwNDQ0oLjRR0z3AyczGePjGOQcQ//D1sw5cLOwMJqo6B2kRHRgOoLcjsDqAno7A6QB6OQKvA+jhCIIOoLUjiHIALkeI8wp+1FVUP0GXJhm2ckI/z/89XZpkuBzRuWrWBKrWhqM9oxHpAIAAAwBV1hmIioz+GAAAAABJRU5ErkJggg==&quot;&gt;Back to products&lt;/button&gt;&lt;/div&gt;&lt;/div&gt;&lt;/header&gt;&lt;div id=&quot;inventory_item_container&quot; class=&quot;inventory_item_container&quot; data-test=&quot;inventory-container&quot; role=&quot;main&quot;&gt;&lt;div class=&quot;inventory_details&quot;&gt;&lt;div class=&quot;inventory_details_container&quot; data-test=&quot;inventory-item&quot;&gt;&lt;div class=&quot;inventory_details_img_container&quot;&gt;&lt;img alt=&quot;Sauce Labs Backpack&quot; class=&quot;inventory_details_img&quot; data-test=&quot;item-sauce-labs-backpack-img&quot; src=&quot;/assets/sauce-backpack-1200x1500-CjRW-Djj.jpg&quot;&gt;&lt;/div&gt;&lt;div class=&quot;inventory_details_desc_container&quot;&gt;&lt;div class=&quot;inventory_details_name large_size&quot; data-test=&quot;inventory-item-name&quot;&gt;Sauce Labs Backpack&lt;/div&gt;&lt;div class=&quot;inventory_details_desc large_size&quot; data-test=&quot;inventory-item-desc&quot;&gt;carry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection.&lt;/div&gt;&lt;div class=&quot;inventory_details_price&quot; data-test=&quot;inventory-item-price&quot;&gt;$29.99&lt;/div&gt;&lt;button class=&quot;btn btn_secondary btn_small btn_inventory&quot; data-test=&quot;remove&quot; id=&quot;remove&quot; name=&quot;remove&quot;&gt;Remove&lt;/button&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;footer class=&quot;footer&quot; data-test=&quot;footer&quot;&gt;&lt;ul class=&quot;social&quot;&gt;&lt;li class=&quot;social_x&quot;&gt;&lt;a href=&quot;https://x.com/saucelabs&quot; target=&quot;_blank&quot; rel=&quot;noreferrer&quot; data-test=&quot;social-x&quot;&gt;X&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;social_facebook&quot;&gt;&lt;a href=&quot;https://www.facebook.com/saucelabs&quot; target=&quot;_blank&quot; rel=&quot;noreferrer&quot; data-test=&quot;social-facebook&quot;&gt;Facebook&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;social_linkedin&quot;&gt;&lt;a href=&quot;https://www.linkedin.com/company/sauce-labs/&quot; target=&quot;_blank&quot; rel=&quot;noreferrer&quot; data-test=&quot;social-linkedin&quot;&gt;LinkedIn&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;div class=&quot;footer_copy&quot; data-test=&quot;footer-copy&quot;&gt;© 2026 Sauce Labs. All Rights Reserved. Terms of Service | Privacy Policy&lt;/div&gt;&lt;/footer&gt;&lt;/div&gt;&lt;/div&gt;
+
+
+
+&lt;/body&gt;&lt;/html&gt;]
+	at com.saucecode.test.CheckoutTest.checkouttext(CheckoutTest.java:14)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.saucecode.test.InventoryTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="linkcount">
+                  </a> <!-- linkcount -->
+                  <span class="method-name">linkcount</span>
+                  <div class="stack-trace">java.lang.AssertionError: Link count mismatch expected [30] but found [0]
+	at com.saucecode.test.InventoryTest.linkcount(InventoryTest.java:46)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="textverify">
+                  </a> <!-- textverify -->
+                  <span class="method-name">textverify</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;header_container&apos;]//span[@class=&apos;title&apos;]&quot;}
+  (Session info: chrome=154.0.8037.93)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: &apos;4.45.0&apos;, revision: &apos;cd6a3cd cd6a3cdfca6970f62e5bc8344109d0fe0e2af05e&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;26.3.1&apos;, java.version: &apos;21.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [20a9718d2df7f960293c88d51d78806c, findElement {using=xpath, value=//*[@id=&apos;header_container&apos;]//span[@class=&apos;title&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.93, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: /var/folders/_x/s37vvg593d3...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56259}, goog:processID: 43904, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:56259/devtoo..., se:cdpVersion: 154.0.8037.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 20a9718d2df7f960293c88d51d78806c
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:575)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:173)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:396)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:390)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.getText(Unknown Source)
+	at com.saucecode.page.SauceInventoryPage.inventorytextverify(SauceInventoryPage.java:74)
+	at com.saucecode.test.InventoryTest.textverify(InventoryTest.java:20)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.saucecode.test.CartPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="buttonenable">
+                  </a> <!-- buttonenable -->
+                  <span class="method-name">buttonenable</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;remove-sauce-labs-backpack&quot;]&quot;}
+  (Session info: chrome=154.0.8037.93)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: &apos;4.45.0&apos;, revision: &apos;cd6a3cd cd6a3cdfca6970f62e5bc8344109d0fe0e2af05e&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;26.3.1&apos;, java.version: &apos;21.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [20a9718d2df7f960293c88d51d78806c, findElement {using=xpath, value=//*[@id=&quot;remove-sauce-labs-backpack&quot;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.93, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: /var/folders/_x/s37vvg593d3...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56259}, goog:processID: 43904, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:56259/devtoo..., se:cdpVersion: 154.0.8037.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 20a9718d2df7f960293c88d51d78806c
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:575)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:173)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:396)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:390)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.isEnabled(Unknown Source)
+	at com.saucecode.page.SauceCartPage.remove(SauceCartPage.java:53)
+	at com.saucecode.test.CartPageTest.buttonenable(CartPageTest.java:29)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkoutbutton">
+                  </a> <!-- checkoutbutton -->
+                  <span class="method-name">checkoutbutton</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;checkout&quot;]&quot;}
+  (Session info: chrome=154.0.8037.93)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: &apos;4.45.0&apos;, revision: &apos;cd6a3cd cd6a3cdfca6970f62e5bc8344109d0fe0e2af05e&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;26.3.1&apos;, java.version: &apos;21.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [20a9718d2df7f960293c88d51d78806c, findElement {using=xpath, value=//*[@id=&quot;checkout&quot;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.93, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: /var/folders/_x/s37vvg593d3...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56259}, goog:processID: 43904, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:56259/devtoo..., se:cdpVersion: 154.0.8037.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 20a9718d2df7f960293c88d51d78806c
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:575)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:173)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:396)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:390)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
+	at com.saucecode.page.SauceCartPage.checkout(SauceCartPage.java:70)
+	at com.saucecode.test.CartPageTest.checkoutbutton(CartPageTest.java:40)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="itemincart">
+                  </a> <!-- itemincart -->
+                  <span class="method-name">itemincart</span>
+                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: chrome=154.0.8037.93)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Build info: version: &apos;4.45.0&apos;, revision: &apos;cd6a3cd cd6a3cdfca6970f62e5bc8344109d0fe0e2af05e&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;26.3.1&apos;, java.version: &apos;21.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [20a9718d2df7f960293c88d51d78806c, clickElement {id=f.0619AA9FD81982DC95D37AA753D39FB6.d.B30A29EE4926EF9E27AB56E6F65969E1.e.30}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.93, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: /var/folders/_x/s37vvg593d3...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56259}, goog:processID: 43904, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:56259/devtoo..., se:cdpVersion: 154.0.8037.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (20a9718d2df7f960293c88d51d78806c)] -&gt; xpath: //*[@id=&quot;shopping_cart_container&quot;]/a]
+Session ID: 20a9718d2df7f960293c88d51d78806c
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:575)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:225)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
+	at com.saucecode.page.SauceCartPage.cartbasket(SauceCartPage.java:44)
+	at com.saucecode.test.CartPageTest.itemincart(CartPageTest.java:17)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="textverify">
+                  </a> <!-- textverify -->
+                  <span class="method-name">textverify</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Your Cart] but found [&lt;html lang=&quot;en&quot;&gt;&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;link rel=&quot;icon&quot; href=&quot;/favicon.ico&quot;&gt;
+  &lt;meta name=&quot;robots&quot; content=&quot;noindex&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+  &lt;meta name=&quot;theme-color&quot; content=&quot;#ffffff&quot;&gt;
+  &lt;meta name=&quot;description&quot; content=&quot;Sauce Labs Swag Labs app&quot;&gt;
+  &lt;link rel=&quot;apple-touch-icon&quot; href=&quot;/icon-192x192.png&quot;&gt;
+  &lt;link rel=&quot;manifest&quot; href=&quot;/manifest.json&quot;&gt;
+
+  &lt;!-- Single Page Apps for GitHub Pages --&gt;
+  &lt;script type=&quot;text/javascript&quot;&gt;
+    // https://github.com/rafgraph/spa-github-pages
+    (function(l) {
+      if (l.search[1] === &apos;/&apos; ) {
+        var decoded = l.search.slice(1).split(&apos;&amp;&apos;).map(function(s) {
+          return s.replace(/~and~/g, &apos;&amp;&apos;)
+        }).join(&apos;?&apos;);
+        window.history.replaceState(null, null,
+                l.pathname.slice(0, -1) + decoded + l.hash
+        );
+      }
+    }(window.location))
+  &lt;/script&gt;
+
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&amp;amp;family=DM+Sans:wght@400;500&quot;&gt;
+  &lt;title&gt;Swag Labs&lt;/title&gt;
+  &lt;script type=&quot;module&quot; crossorigin=&quot;&quot; src=&quot;/assets/index-D3OxT1jE.js&quot;&gt;&lt;/script&gt;
+  &lt;link rel=&quot;stylesheet&quot; crossorigin=&quot;&quot; href=&quot;/assets/index-aSZoiKGF.css&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;noscript&gt;You need to enable JavaScript to run this app.&lt;/noscript&gt;
+  &lt;div id=&quot;root&quot;&gt;&lt;div id=&quot;page_wrapper&quot;&gt;&lt;div id=&quot;contents_wrapper&quot;&gt;&lt;header id=&quot;header_container&quot; class=&quot;header_container inventory_details&quot; data-test=&quot;header-container&quot;&gt;&lt;div class=&quot;primary_header&quot; data-test=&quot;primary-header&quot;&gt;&lt;div id=&quot;menu_button_container&quot;&gt;&lt;div&gt;&lt;div&gt;&lt;div class=&quot;bm-burger-button&quot; style=&quot;z-index: 1000;&quot;&gt;&lt;button type=&quot;button&quot; id=&quot;react-burger-menu-btn&quot; style=&quot;position: absolute; left: 0px; top: 0px; z-index: 1; width: 100%; height: 100%; margin: 0px; padding: 0px; border-width: medium; border-style: none; border-color: currentcolor; border-image: none; font-size: 0px; background: transparent; cursor: pointer;&quot;&gt;Open Menu&lt;/button&gt;&lt;img class=&quot;bm-icon&quot; alt=&quot;Open Menu&quot; data-test=&quot;open-menu&quot; srcset=&quot;data:image/svg+xml,%3csvg%20width=&apos;32&apos;%20height=&apos;32&apos;%20viewBox=&apos;0%200%2016%2016&apos;%20fill=&apos;none&apos;%20xmlns=&apos;http://www.w3.org/2000/svg&apos;%3e%3cpath%20fill-rule=&apos;evenodd&apos;%20clip-rule=&apos;evenodd&apos;%20d=&apos;M0.666626%202.83333C0.666626%202.3731%201.00863%202%201.43051%202H14.5694C14.9913%202%2015.3333%202.3731%2015.3333%202.83333C15.3333%203.29357%2014.9913%203.66667%2014.5694%203.66667H1.43051C1.00863%203.66667%200.666626%203.29357%200.666626%202.83333ZM0.666626%207.5C0.666626%207.03976%201.00863%206.66667%201.43051%206.66667H14.5694C14.9913%206.66667%2015.3333%207.03976%2015.3333%207.5C15.3333%207.96024%2014.9913%208.33333%2014.5694%208.33333H1.43051C1.00863%208.33333%200.666626%207.96024%200.666626%207.5ZM1.43051%2011.3333C1.00863%2011.3333%200.666626%2011.7064%200.666626%2012.1667C0.666626%2012.6269%201.00863%2013%201.43051%2013H14.5694C14.9913%2013%2015.3333%2012.6269%2015.3333%2012.1667C15.3333%2011.7064%2014.9913%2011.3333%2014.5694%2011.3333H1.43051Z&apos;%20fill=&apos;%23132322&apos;%20/%3e%3c/svg%3e&quot; src=&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDkuMC1jMDAwIDc5LmRhNGE3ZTVlZiwgMjAyMi8xMS8yMi0xMzo1MDowNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDI0LjEgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6QTA3QzBCMEVBRUYzMTFFREIwRThFMzc3OTlDRTMyNUIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6QTA3QzBCMEZBRUYzMTFFREIwRThFMzc3OTlDRTMyNUIiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpBMDdDMEIwQ0FFRjMxMUVEQjBFOEUzNzc5OUNFMzI1QiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpBMDdDMEIwREFFRjMxMUVEQjBFOEUzNzc5OUNFMzI1QiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pq0LVkQAAAERSURBVHjaYvz//z/DQAImhgEGow5gARE379wx8IuN2f/2/XsBeliqqqj4YMHkKYHqKioXwCEwb+mSAnpZDgK3799XmL9sWT48CrQ1NS/QO+gtTUwOgmhGWDY8c+GCw9NnzxToYbm0lNQDEwODAygOGM2Gow4Y0ILo+YsXCgtWLM//+OkzXcoCfj7eDwkRURMlJcQfgB0wf/mygr6ZM/Pp6XNg7mOsKiwqGBxRkBAZNQFEf/r8hZ8elvLx8nxMiIyeMFoQjTpg8BREA1kdgx2wcdu2hOSiwvn09HlfY1NhXHj4BHAUHDt9yoHeQX/t5k19eBpIio6ZAGoo0styYUHBD4lRURNHC6JRB4w6AAQAAgwA/fRn191dMT8AAAAASUVORK5CYII=&quot; style=&quot;width: 100%; height: 100%;&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;div id=&quot;&quot; class=&quot;bm-menu-wrap&quot; aria-hidden=&quot;true&quot; hidden=&quot;true&quot; style=&quot;position: fixed; right: inherit; z-index: 1100; width: 300px; height: 100%; transform: translate3d(-100%, 0px, 0px); transition: 0.5s;&quot;&gt;&lt;div class=&quot;bm-menu&quot; style=&quot;height: 100%; box-sizing: border-box; overflow: auto;&quot;&gt;&lt;nav class=&quot;bm-item-list&quot; style=&quot;height: 100%;&quot;&gt;&lt;a id=&quot;inventory_sidebar_link&quot; class=&quot;bm-item menu-item&quot; href=&quot;#&quot; data-test=&quot;inventory-sidebar-link&quot; role=&quot;button&quot; tabindex=&quot;-1&quot; style=&quot;display: block;&quot;&gt;All Items&lt;/a&gt;&lt;a id=&quot;dynamic_catalog_sidebar_link&quot; class=&quot;bm-item menu-item&quot; href=&quot;#&quot; data-test=&quot;dynamic-catalog-sidebar-link&quot; role=&quot;button&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;dynamic_catalog_submenu&quot; tabindex=&quot;-1&quot; style=&quot;display: block;&quot;&gt;Dynamic Catalog&lt;span class=&quot;submenu-chevron&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;&lt;/a&gt;&lt;a id=&quot;about_sidebar_link&quot; class=&quot;bm-item menu-item&quot; href=&quot;https://saucelabs.com/&quot; data-test=&quot;about-sidebar-link&quot; tabindex=&quot;-1&quot; style=&quot;display: block;&quot;&gt;About&lt;/a&gt;&lt;a id=&quot;logout_sidebar_link&quot; class=&quot;bm-item menu-item&quot; href=&quot;#&quot; data-test=&quot;logout-sidebar-link&quot; role=&quot;button&quot; tabindex=&quot;-1&quot; style=&quot;display: block;&quot;&gt;Logout&lt;/a&gt;&lt;a id=&quot;reset_sidebar_link&quot; class=&quot;bm-item menu-item&quot; href=&quot;#&quot; data-test=&quot;reset-sidebar-link&quot; role=&quot;button&quot; tabindex=&quot;-1&quot; style=&quot;display: block;&quot;&gt;Reset App State&lt;/a&gt;&lt;/nav&gt;&lt;/div&gt;&lt;div&gt;&lt;div class=&quot;bm-cross-button&quot; style=&quot;position: absolute; width: 24px; height: 24px; right: 8px; top: 8px;&quot;&gt;&lt;button type=&quot;button&quot; id=&quot;react-burger-cross-btn&quot; tabindex=&quot;-1&quot; style=&quot;position: absolute; left: 0px; top: 0px; z-index: 1; width: 100%; height: 100%; margin: 0px; padding: 0px; border-width: medium; border-style: none; border-color: currentcolor; border-image: none; font-size: 0px; background: transparent; cursor: pointer;&quot;&gt;Close Menu&lt;/button&gt;&lt;img class=&quot;bm-cross&quot; alt=&quot;Close Menu&quot; data-test=&quot;close-menu&quot; srcset=&quot;data:image/svg+xml,%3csvg%20width=&apos;32&apos;%20height=&apos;32&apos;%20viewBox=&apos;0%200%2016%2016&apos;%20fill=&apos;none&apos;%20xmlns=&apos;http://www.w3.org/2000/svg&apos;%3e%3cpath%20fill-rule=&apos;evenodd&apos;%20clip-rule=&apos;evenodd&apos;%20d=&apos;M2.22528%202.22552C2.55072%201.90009%203.07835%201.90009%203.40379%202.22552L7.99998%206.82172L12.5962%202.22552C12.9216%201.90009%2013.4493%201.90009%2013.7747%202.22552C14.1001%202.55096%2014.1001%203.0786%2013.7747%203.40403L9.1785%208.00023L13.7747%2012.5964C14.1001%2012.9219%2014.1001%2013.4495%2013.7747%2013.7749C13.4493%2014.1004%2012.9216%2014.1004%2012.5962%2013.7749L7.99998%209.17874L3.40379%2013.7749C3.07835%2014.1004%202.55072%2014.1004%202.22528%2013.7749C1.89984%2013.4495%201.89984%2012.9219%202.22528%2012.5964L6.82147%208.00023L2.22528%203.40403C1.89984%203.0786%201.89984%202.55096%202.22528%202.22552Z&apos;%20fill=&apos;%23132322&apos;%20/%3e%3c/svg%3e&quot; src=&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDkuMC1jMDAwIDc5LmRhNGE3ZTVlZiwgMjAyMi8xMS8yMi0xMzo1MDowNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDI0LjEgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NkNCNjBCQjlBRUY4MTFFREIwRThFMzc3OTlDRTMyNUIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NkNCNjBCQkFBRUY4MTFFREIwRThFMzc3OTlDRTMyNUIiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpBMDdDMEIxNEFFRjMxMUVEQjBFOEUzNzc5OUNFMzI1QiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo2Q0I2MEJCOEFFRjgxMUVEQjBFOEUzNzc5OUNFMzI1QiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PtV59sYAAAFSSURBVHjaYvz//z/DQAImhgEGow7AcMC0uXPrRTTU/3uFh5//8uWLAKUWgMyITEvbDzJzKtBsDAWgRIiMhdXV/sOwZ1jY+c+fPwugqyEWg/SCzEA2E10NRgi42dkfgLFPXbxgEJacvJ+ckADpAekFmQETM9M3uEAwBD4BXe2B5mpSQwKbz0H8T1jMwGoAJY4gxXKcDiDXEaRajtcBpDqCHMsJOoBYR5BrOVEOIOQISiwHYUZiK6PP0Gx1Gku2Qs9qK+fOdeTl4flAjLmMpNSG2ByBDEi1HGs5QE50kBrseEtCgkEGxbjkaFobYiteKS22mSgt202RyneyHEFp2U5p3UGVioUSR1CtYiHXEQzUrFjIcQTVLCfXEVS1nBxHYGim1HJ8johITd1P0AHUsByfIwg6YMqc2Q0ghVFpqfspsRybIyYDzSa7Oh7tmg1bBwAEGAACANpiovW4dgAAAABJRU5ErkJggg==&quot; style=&quot;width: 100%; height: 100%;&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;header_label&quot;&gt;&lt;div class=&quot;app_logo&quot;&gt;Swag Labs&lt;/div&gt;&lt;/div&gt;&lt;div id=&quot;shopping_cart_container&quot; class=&quot;shopping_cart_container&quot;&gt;&lt;a class=&quot;shopping_cart_link&quot; data-test=&quot;shopping-cart-link&quot; role=&quot;button&quot; aria-label=&quot;Cart, 1 items&quot;&gt;&lt;span class=&quot;shopping_cart_badge&quot; data-test=&quot;shopping-cart-badge&quot;&gt;1&lt;/span&gt;&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;header_secondary_container&quot; data-test=&quot;secondary-header&quot;&gt;&lt;div class=&quot;left_component&quot;&gt;&lt;button class=&quot;btn btn_secondary back btn_large inventory_details_back_button&quot; data-test=&quot;back-to-products&quot; id=&quot;back-to-products&quot; name=&quot;back-to-products&quot;&gt;&lt;img class=&quot;back-image&quot; alt=&quot;&quot; src=&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDkuMC1jMDAwIDc5LmRhNGE3ZTVlZiwgMjAyMi8xMS8yMi0xMzo1MDowNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDI0LjEgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6QzQ4Q0IxMkFBRUZDMTFFREIwRThFMzc3OTlDRTMyNUIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6QzQ4Q0IxMkJBRUZDMTFFREIwRThFMzc3OTlDRTMyNUIiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpDNDhDQjEyOEFFRkMxMUVEQjBFOEUzNzc5OUNFMzI1QiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpDNDhDQjEyOUFFRkMxMUVEQjBFOEUzNzc5OUNFMzI1QiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PgbFSzAAAAFGSURBVHjaYvz//z/DQAImhgEGow4gywHLD2zON8gPeN+9dk4/pQ5gJDURzty2or513awGGP/RnH2MdAsBdMurAlMbKY4DUAgQg2dsXV4vm+z4H4anb1nWQKxefHhALSfKAbS0nKADaG05XgfQw3KcDqCX5VgdQE/LQRilIELP50byWheSXYMmUrPo1ZBVuqAqrXABoyS8/fSBgXN90nl6lP/ryyc7GqtqH0ApCT99+ypArwqIj4v7A9a6ABj/DW3rZ9fTMgqkhMUfwHyPtSgGJTrkRAhKlLRMhMwNDQ0oLjRR0z3AyczGePjGOQcQ//D1sw5cLOwMJqo6B2kRHRgOoLcjsDqAno7A6QB6OQKvA+jhCIIOoLUjiHIALkeI8wp+1FVUP0GXJhm2ckI/z/89XZpkuBzRuWrWBKrWhqM9oxHpAIAAAwBV1hmIioz+GAAAAABJRU5ErkJggg==&quot;&gt;Back to products&lt;/button&gt;&lt;/div&gt;&lt;/div&gt;&lt;/header&gt;&lt;div id=&quot;inventory_item_container&quot; class=&quot;inventory_item_container&quot; data-test=&quot;inventory-container&quot; role=&quot;main&quot;&gt;&lt;div class=&quot;inventory_details&quot;&gt;&lt;div class=&quot;inventory_details_container&quot; data-test=&quot;inventory-item&quot;&gt;&lt;div class=&quot;inventory_details_img_container&quot;&gt;&lt;img alt=&quot;Sauce Labs Backpack&quot; class=&quot;inventory_details_img&quot; data-test=&quot;item-sauce-labs-backpack-img&quot; src=&quot;/assets/sauce-backpack-1200x1500-CjRW-Djj.jpg&quot;&gt;&lt;/div&gt;&lt;div class=&quot;inventory_details_desc_container&quot;&gt;&lt;div class=&quot;inventory_details_name large_size&quot; data-test=&quot;inventory-item-name&quot;&gt;Sauce Labs Backpack&lt;/div&gt;&lt;div class=&quot;inventory_details_desc large_size&quot; data-test=&quot;inventory-item-desc&quot;&gt;carry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection.&lt;/div&gt;&lt;div class=&quot;inventory_details_price&quot; data-test=&quot;inventory-item-price&quot;&gt;$29.99&lt;/div&gt;&lt;button class=&quot;btn btn_secondary btn_small btn_inventory&quot; data-test=&quot;remove&quot; id=&quot;remove&quot; name=&quot;remove&quot;&gt;Remove&lt;/button&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;footer class=&quot;footer&quot; data-test=&quot;footer&quot;&gt;&lt;ul class=&quot;social&quot;&gt;&lt;li class=&quot;social_x&quot;&gt;&lt;a href=&quot;https://x.com/saucelabs&quot; target=&quot;_blank&quot; rel=&quot;noreferrer&quot; data-test=&quot;social-x&quot;&gt;X&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;social_facebook&quot;&gt;&lt;a href=&quot;https://www.facebook.com/saucelabs&quot; target=&quot;_blank&quot; rel=&quot;noreferrer&quot; data-test=&quot;social-facebook&quot;&gt;Facebook&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;social_linkedin&quot;&gt;&lt;a href=&quot;https://www.linkedin.com/company/sauce-labs/&quot; target=&quot;_blank&quot; rel=&quot;noreferrer&quot; data-test=&quot;social-linkedin&quot;&gt;LinkedIn&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;div class=&quot;footer_copy&quot; data-test=&quot;footer-copy&quot;&gt;© 2026 Sauce Labs. All Rights Reserved. Terms of Service | Privacy Policy&lt;/div&gt;&lt;/footer&gt;&lt;/div&gt;&lt;/div&gt;
+
+
+
+&lt;/body&gt;&lt;/html&gt;]
+	at com.saucecode.test.CartPageTest.textverify(CartPageTest.java:24)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.saucecode.test.InventoryTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="itemtocart">
+                  </a> <!-- itemtocart -->
+                  <span class="method-name">itemtocart</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.saucecode.test.CartPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="buttonlist">
+                  </a> <!-- buttonlist -->
+                  <span class="method-name">buttonlist</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.saucecode.test.SauceLoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="titleverification">
+                  </a> <!-- titleverification -->
+                  <span class="method-name">titleverification</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validlogin">
+                  </a> <!-- validlogin -->
+                  <span class="method-name">validlogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/lintaalbin/Applications/sourcedemo/testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.saucecode.test.SauceLoginTest&quot;/&gt;
+      &lt;class name=&quot;com.saucecode.test.InventoryTest&quot;/&gt;
+      &lt;class name=&quot;com.saucecode.test.CartPageTest&quot;/&gt;
+      &lt;class name=&quot;com.saucecode.test.CheckoutTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test (4 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(12);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'validlogin')
+data.setCell(0, 2, 'com.saucecode.test.SauceLoginTest')
+data.setCell(0, 3, 124);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'itemtocart')
+data.setCell(1, 2, 'com.saucecode.test.InventoryTest')
+data.setCell(1, 3, 117);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'linkcount')
+data.setCell(2, 2, 'com.saucecode.test.InventoryTest')
+data.setCell(2, 3, 30);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'titleverification')
+data.setCell(3, 2, 'com.saucecode.test.SauceLoginTest')
+data.setCell(3, 3, 12);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'itemincart')
+data.setCell(4, 2, 'com.saucecode.test.CartPageTest')
+data.setCell(4, 3, 12);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'textverify')
+data.setCell(5, 2, 'com.saucecode.test.InventoryTest')
+data.setCell(5, 3, 8);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'buttonlist')
+data.setCell(6, 2, 'com.saucecode.test.CartPageTest')
+data.setCell(6, 3, 6);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'buttonenable')
+data.setCell(7, 2, 'com.saucecode.test.CartPageTest')
+data.setCell(7, 3, 6);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'textverify')
+data.setCell(8, 2, 'com.saucecode.test.CartPageTest')
+data.setCell(8, 3, 5);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'checkoutbutton')
+data.setCell(9, 2, 'com.saucecode.test.CartPageTest')
+data.setCell(9, 3, 5);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'checkoutaction')
+data.setCell(10, 2, 'com.saucecode.test.CheckoutTest')
+data.setCell(10, 3, 4);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'checkouttext')
+data.setCell(11, 2, 'com.saucecode.test.CheckoutTest')
+data.setCell(11, 3, 3);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 332 ms</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">6 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.saucecode.test.CheckoutTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">teardown</span>
+                <br/>
+                <span class="ignored-method-name">setup</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.saucecode.test.InventoryTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setup</span>
+                <br/>
+                <span class="ignored-method-name">teardown</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.saucecode.test.CartPageTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setup</span>
+                <br/>
+                <span class="ignored-method-name">teardown</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.saucecode.test.SauceLoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-method before">
+                <span class="method-name">initializepages(public void com.saucecode.test.SauceLoginTest.titleverification())</span>
+                <span class="method-start">2151 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">titleverification</span>
+                <span class="method-start">2161 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserclose([TestResult name=titleverification status=SUCCESS method=SauceLoginTest.titleverification()[pri:0, i...)</span>
+                <span class="method-start">2174 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initializepages(public void com.saucecode.test.SauceLoginTest.validlogin())</span>
+                <span class="method-start">2176 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validlogin</span>
+                <span class="method-start">2176 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserclose([TestResult name=validlogin status=SUCCESS method=SauceLoginTest.validlogin()[pri:1, instance:com.sa...)</span>
+                <span class="method-start">2300 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.saucecode.test.InventoryTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">initializepages(public void com.saucecode.test.InventoryTest.textverify())</span>
+                <span class="method-start">2301 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">textverify</span>
+                <span class="method-start">2301 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserclose([TestResult name=textverify status=FAILURE method=InventoryTest.textverify()[pri:2, instance:com.sau...)</span>
+                <span class="method-start">2310 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initializepages(public void com.saucecode.test.InventoryTest.linkcount())</span>
+                <span class="method-start">2311 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">linkcount</span>
+                <span class="method-start">2312 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserclose([TestResult name=linkcount status=FAILURE method=InventoryTest.linkcount()[pri:3, instance:com.sauce...)</span>
+                <span class="method-start">2343 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initializepages(public void com.saucecode.test.InventoryTest.itemtocart())</span>
+                <span class="method-start">2344 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">itemtocart</span>
+                <span class="method-start">2346 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.saucecode.test.CartPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">initializepages(public void com.saucecode.test.CartPageTest.itemincart())</span>
+                <span class="method-start">2464 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.saucecode.test.InventoryTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">browserclose([TestResult name=itemtocart status=SUCCESS method=InventoryTest.itemtocart()[pri:4, instance:com.sau...)</span>
+                <span class="method-start">2464 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.saucecode.test.CartPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">itemincart</span>
+                <span class="method-start">2465 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserclose([TestResult name=itemincart status=FAILURE method=CartPageTest.itemincart()[pri:5, instance:com.sauc...)</span>
+                <span class="method-start">2477 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initializepages(public void com.saucecode.test.CartPageTest.textverify())</span>
+                <span class="method-start">2478 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">textverify</span>
+                <span class="method-start">2479 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserclose([TestResult name=textverify status=FAILURE method=CartPageTest.textverify()[pri:6, instance:com.sauc...)</span>
+                <span class="method-start">2485 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initializepages(public void com.saucecode.test.CartPageTest.buttonlist())</span>
+                <span class="method-start">2486 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">buttonlist</span>
+                <span class="method-start">2487 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserclose([TestResult name=buttonlist status=SUCCESS method=CartPageTest.buttonlist()[pri:7, instance:com.sauc...)</span>
+                <span class="method-start">2494 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initializepages(public void com.saucecode.test.CartPageTest.buttonenable())</span>
+                <span class="method-start">2496 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">buttonenable</span>
+                <span class="method-start">2498 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserclose([TestResult name=buttonenable status=FAILURE method=CartPageTest.buttonenable()[pri:8, instance:com....)</span>
+                <span class="method-start">2505 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initializepages(public void com.saucecode.test.CartPageTest.checkoutbutton())</span>
+                <span class="method-start">2506 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">checkoutbutton</span>
+                <span class="method-start">2507 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserclose([TestResult name=checkoutbutton status=FAILURE method=CartPageTest.checkoutbutton()[pri:9, instance:...)</span>
+                <span class="method-start">2512 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.saucecode.test.CheckoutTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">checkouttext</span>
+                <span class="method-start">2513 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">initializepages(public void com.saucecode.test.CheckoutTest.checkouttext())</span>
+                <span class="method-start">2513 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">browserclose([TestResult name=checkouttext status=FAILURE method=CheckoutTest.checkouttext()[pri:9, instance:com....)</span>
+                <span class="method-start">2517 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">checkoutaction</span>
+                <span class="method-start">2518 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">initializepages(public void com.saucecode.test.CheckoutTest.checkoutaction())</span>
+                <span class="method-start">2518 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.saucecode.test.SauceLoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">2523 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.saucecode.test.CheckoutTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">browserclose([TestResult name=checkoutaction status=FAILURE method=CheckoutTest.checkoutaction()[pri:10, instance...)</span>
+                <span class="method-start">2523 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

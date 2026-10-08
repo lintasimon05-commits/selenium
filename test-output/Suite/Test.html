@@ -1,0 +1,795 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>4/8/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Oct 05 10:18:13 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>2 seconds (2620 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.saucecode.test.InventoryTest.linkcount()'><b>linkcount</b><br>Test class: com.saucecode.test.InventoryTest</td>
+<td><div><pre>java.lang.AssertionError: Link count mismatch expected [30] but found [0]
+	at com.saucecode.test.InventoryTest.linkcount(InventoryTest.java:46)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1531175283", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1531175283'><pre>java.lang.AssertionError: Link count mismatch expected [30] but found [0]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1431)
+	at org.testng.Assert.assertEquals(Assert.java:1395)
+	at com.saucecode.test.InventoryTest.linkcount(InventoryTest.java:46)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.saucecode.test.InventoryTest@c730b35</td></tr>
+<tr>
+<td title='com.saucecode.test.CheckoutTest.checkouttext()'><b>checkouttext</b><br>Test class: com.saucecode.test.CheckoutTest</td>
+<td><div><pre>java.lang.AssertionError: expected [Checkout:Your information] but found [&lt;html lang=&quot;en&quot;&gt;&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;link rel=&quot;icon&quot; href=&quot;/favicon.ico&quot;&gt;
+  &lt;meta name=&quot;robots&quot; content=&quot;noindex&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+  &lt;meta name=&quot;theme-color&quot; content=&quot;#ffffff&quot;&gt;
+  &lt;meta name=&quot;description&quot; content=&quot;Sauce Labs Swag Labs app&quot;&gt;
+  &lt;link rel=&quot;apple-touch-icon&quot; href=&quot;/icon-192x192.png&quot;&gt;
+  &lt;link rel=&quot;manifest&quot; href=&quot;/manifest.json&quot;&gt;
+
+  &lt;!-- Single Page Apps for GitHub Pages --&gt;
+  &lt;script type=&quot;text/javascript&quot;&gt;
+    // https://github.com/rafgraph/spa-github-pages
+    (function(l) {
+      if (l.search[1] === &apos;/&apos; ) {
+        var decoded = l.search.slice(1).split(&apos;&amp;&apos;).map(function(s) {
+          return s.replace(/~and~/g, &apos;&amp;&apos;)
+        }).join(&apos;?&apos;);
+        window.history.replaceState(null, null,
+                l.pathname.slice(0, -1) + decoded + l.hash
+        );
+      }
+    }(window.location))
+  &lt;/script&gt;
+
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&amp;amp;family=DM+Sans:wght@400;500&quot;&gt;
+  &lt;title&gt;Swag Labs&lt;/title&gt;
+  &lt;script type=&quot;module&quot; crossorigin=&quot;&quot; src=&quot;/assets/index-D3OxT1jE.js&quot;&gt;&lt;/script&gt;
+  &lt;link rel=&quot;stylesheet&quot; crossorigin=&quot;&quot; href=&quot;/assets/index-aSZoiKGF.css&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;noscript&gt;You need to enable JavaScript to run this app.&lt;/noscript&gt;
+  &lt;div id=&quot;root&quot;&gt;&lt;div id=&quot;page_wrapper&quot;&gt;&lt;div id=&quot;contents_wrapper&quot;&gt;&lt;header id=&quot;header_container&quot; class=&quot;header_container inventory_details&quot; data-test=&quot;header-container&quot;&gt;&lt;div class=&quot;primary_header&quot; data-test=&quot;primary-header&quot;&gt;&lt;div id=&quot;menu_button_container&quot;&gt;&lt;div&gt;&lt;div&gt;&lt;div class=&quot;bm-burger-button&quot; style=&quot;z-index: 1000;&quot;&gt;&lt;button type=&quot;button&quot; id=&quot;react-burger-menu-btn&quot; style=&quot;position: absolute; left: 0px; top: 0px; z-index: 1; width: 100%; height: 100%; margin: 0px; padding: 0px; border-width: medium; border-style: none; border-color: currentcolor; border-image: none; font-size: 0px; background: transparent; cursor: pointer;&quot;&gt;Open Menu&lt;/button&gt;&lt;img class=&quot;bm-icon&quot; alt=&quot;Open Menu&quot; data-test=&quot;open-menu&quot; srcset=&quot;data:image/svg+xml,%3csvg%20width=&apos;32&apos;%20height=&apos;32&apos;%20viewBox=&apos;0%200%2016%2016&apos;%20fill=&apos;none&apos;%20xmlns=&apos;http://www.w3.org/2000/svg&apos;%3e%3cpath%20fill-rule=&apos;evenodd&apos;%20clip-rule=&apos;evenodd&apos;%20d=&apos;M0.666626%202.83333C0.666626%202.3731%201.00863%202%201.43051%202H14.5694C14.9913%202%2015.3333%202.3731%2015.3333%202.83333C15.3333%203.29357%2014.9913%203.66667%2014.5694%203.66667H1.43051C1.00863%203.66667%200.666626%203.29357%200.666626%202.83333ZM0.666626%207.5C0.666626%207.03976%201.00863%206.66667%201.43051%206.66667H14.5694C14.9913%206.66667%2015.3333%207.03976%2015.3333%207.5C15.3333%207.96024%2014.9913%208.33333%2014.5694%208.33333H1.43051C1.00863%208.33333%200.666626%207.96024%200.666626%207.5ZM1.43051%2011.3333C1.00863%2011.3333%200.666626%2011.7064%200.666626%2012.1667C0.666626%2012.6269%201.00863%2013%201.43051%2013H14.5694C14.9913%2013%2015.3333%2012.6269%2015.3333%2012.1667C15.3333%2011.7064%2014.9913%2011.3333%2014.5694%2011.3333H1.43051Z&apos;%20fill=&apos;%23132322&apos;%20/%3e%3c/svg%3e&quot; src=&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDkuMC1jMDAwIDc5LmRhNGE3ZTVlZiwgMjAyMi8xMS8yMi0xMzo1MDowNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDI0LjEgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6QTA3QzBCMEVBRUYzMTFFREIwRThFMzc3OTlDRTMyNUIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6QTA3QzBCMEZBRUYzMTFFREIwRThFMzc3OTlDRTMyNUIiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpBMDdDMEIwQ0FFRjMxMUVEQjBFOEUzNzc5OUNFMzI1QiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpBMDdDMEIwREFFRjMxMUVEQjBFOEUzNzc5OUNFMzI1QiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pq0LVkQAAAERSURBVHjaYvz//z/DQAImhgEGow5gARE379wx8IuN2f/2/XsBeliqqqj4YMHkKYHqKioXwCEwb+mSAnpZDgK3799XmL9sWT48CrQ1NS/QO+gtTUwOgmhGWDY8c+GCw9NnzxToYbm0lNQDEwODAygOGM2Gow4Y0ILo+YsXCgtWLM//+OkzXcoCfj7eDwkRURMlJcQfgB0wf/mygr6ZM/Pp6XNg7mOsKiwqGBxRkBAZNQFEf/r8hZ8elvLx8nxMiIyeMFoQjTpg8BREA1kdgx2wcdu2hOSiwvn09HlfY1NhXHj4BHAUHDt9yoHeQX/t5k19eBpIio6ZAGoo0styYUHBD4lRURNHC6JRB4w6AAQAAgwA/fRn191dMT8AAAAASUVORK5CYII=&quot; style=&quot;width: 100%; height: 100%;&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;div id=&quot;&quot; class=&quot;bm-menu-wrap&quot; aria-hidden=&quot;true&quot; hidden=&quot;true&quot; style=&quot;position: fixed; right: inherit; z-index: 1100; width: 300px; height: 100%; transform: translate3d(-100%, 0px, 0px); transition: 0.5s;&quot;&gt;&lt;div class=&quot;bm-menu&quot; style=&quot;height: 100%; box-sizing: border-box; overflow: auto;&quot;&gt;&lt;nav class=&quot;bm-item-list&quot; style=&quot;height: 100%;&quot;&gt;&lt;a id=&quot;inventory_sidebar_link&quot; class=&quot;bm-item menu-item&quot; href=&quot;#&quot; data-test=&quot;inventory-sidebar-link&quot; role=&quot;button&quot; tabindex=&quot;-1&quot; style=&quot;display: block;&quot;&gt;All Items&lt;/a&gt;&lt;a id=&quot;dynamic_catalog_sidebar_link&quot; class=&quot;bm-item menu-item&quot; href=&quot;#&quot; data-test=&quot;dynamic-catalog-sidebar-link&quot; role=&quot;button&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;dynamic_catalog_submenu&quot; tabindex=&quot;-1&quot; style=&quot;display: block;&quot;&gt;Dynamic Catalog&lt;span class=&quot;submenu-chevron&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;&lt;/a&gt;&lt;a id=&quot;about_sidebar_link&quot; class=&quot;bm-item menu-item&quot; href=&quot;https://saucelabs.com/&quot; data-test=&quot;about-sidebar-link&quot; tabindex=&quot;-1&quot; style=&quot;display: block;&quot;&gt;About&lt;/a&gt;&lt;a id=&quot;logout_sidebar_link&quot; class=&quot;bm-item menu-item&quot; href=&quot;#&quot; data-test=&quot;logout-sidebar-link&quot; role=&quot;button&quot; tabindex=&quot;-1&quot; style=&quot;display: block;&quot;&gt;Logout&lt;/a&gt;&lt;a id=&quot;reset_sidebar_link&quot; class=&quot;bm-item menu-item&quot; href=&quot;#&quot; data-test=&quot;reset-sidebar-link&quot; role=&quot;button&quot; tabindex=&quot;-1&quot; style=&quot;display: block;&quot;&gt;Reset App State&lt;/a&gt;&lt;/nav&gt;&lt;/div&gt;&lt;div&gt;&lt;div class=&quot;bm-cross-button&quot; style=&quot;position: absolute; width: 24px; height: 24px; right: 8px; top: 8px;&quot;&gt;&lt;button type=&quot;button&quot; id=&quot;react-burger-cross-btn&quot; tabindex=&quot;-1&quot; style=&quot;position: absolute; left: 0px; top: 0px; z-index: 1; width: 100%; height: 100%; margin: 0px; padding: 0px; border-width: medium; border-style: none; border-color: currentcolor; border-image: none; font-size: 0px; background: transparent; cursor: pointer;&quot;&gt;Close Menu&lt;/button&gt;&lt;img class=&quot;bm-cross&quot; alt=&quot;Close Menu&quot; data-test=&quot;close-menu&quot; srcset=&quot;data:image/svg+xml,%3csvg%20width=&apos;32&apos;%20height=&apos;32&apos;%20viewBox=&apos;0%200%2016%2016&apos;%20fill=&apos;none&apos;%20xmlns=&apos;http://www.w3.org/2000/svg&apos;%3e%3cpath%20fill-rule=&apos;evenodd&apos;%20clip-rule=&apos;evenodd&apos;%20d=&apos;M2.22528%202.22552C2.55072%201.90009%203.07835%201.90009%203.40379%202.22552L7.99998%206.82172L12.5962%202.22552C12.9216%201.90009%2013.4493%201.90009%2013.7747%202.22552C14.1001%202.55096%2014.1001%203.0786%2013.7747%203.40403L9.1785%208.00023L13.7747%2012.5964C14.1001%2012.9219%2014.1001%2013.4495%2013.7747%2013.7749C13.4493%2014.1004%2012.9216%2014.1004%2012.5962%2013.7749L7.99998%209.17874L3.40379%2013.7749C3.07835%2014.1004%202.55072%2014.1004%202.22528%2013.7749C1.89984%2013.4495%201.89984%2012.9219%202.22528%2012.5964L6.82147%208.00023L2.22528%203.40403C1.89984%203.0786%201.89984%202.55096%202.22528%202.22552Z&apos;%20fill=&apos;%23132322&apos;%20/%3e%3c/svg%3e&quot; src=&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDkuMC1jMDAwIDc5LmRhNGE3ZTVlZiwgMjAyMi8xMS8yMi0xMzo1MDowNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDI0LjEgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NkNCNjBCQjlBRUY4MTFFREIwRThFMzc3OTlDRTMyNUIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NkNCNjBCQkFBRUY4MTFFREIwRThFMzc3OTlDRTMyNUIiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpBMDdDMEIxNEFFRjMxMUVEQjBFOEUzNzc5OUNFMzI1QiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo2Q0I2MEJCOEFFRjgxMUVEQjBFOEUzNzc5OUNFMzI1QiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PtV59sYAAAFSSURBVHjaYvz//z/DQAImhgEGow7AcMC0uXPrRTTU/3uFh5//8uWLAKUWgMyITEvbDzJzKtBsDAWgRIiMhdXV/sOwZ1jY+c+fPwugqyEWg/SCzEA2E10NRgi42dkfgLFPXbxgEJacvJ+ckADpAekFmQETM9M3uEAwBD4BXe2B5mpSQwKbz0H8T1jMwGoAJY4gxXKcDiDXEaRajtcBpDqCHMsJOoBYR5BrOVEOIOQISiwHYUZiK6PP0Gx1Gku2Qs9qK+fOdeTl4flAjLmMpNSG2ByBDEi1HGs5QE50kBrseEtCgkEGxbjkaFobYiteKS22mSgt202RyneyHEFp2U5p3UGVioUSR1CtYiHXEQzUrFjIcQTVLCfXEVS1nBxHYGim1HJ8johITd1P0AHUsByfIwg6YMqc2Q0ghVFpqfspsRybIyYDzSa7Oh7tmg1bBwAEGAACANpiovW4dgAAAABJRU5ErkJggg==&quot; style=&quot;width: 100%; height: 100%;&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;header_label&quot;&gt;&lt;div class=&quot;app_logo&quot;&gt;Swag Labs&lt;/div&gt;&lt;/div&gt;&lt;div id=&quot;shopping_cart_container&quot; class=&quot;shopping_cart_container&quot;&gt;&lt;a class=&quot;shopping_cart_link&quot; data-test=&quot;shopping-cart-link&quot; role=&quot;button&quot; aria-label=&quot;Cart, 1 items&quot;&gt;&lt;span class=&quot;shopping_cart_badge&quot; data-test=&quot;shopping-cart-badge&quot;&gt;1&lt;/span&gt;&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;header_secondary_container&quot; data-test=&quot;secondary-header&quot;&gt;&lt;div class=&quot;left_component&quot;&gt;&lt;button class=&quot;btn btn_secondary back btn_large inventory_details_back_button&quot; data-test=&quot;back-to-products&quot; id=&quot;back-to-products&quot; name=&quot;back-to-products&quot;&gt;&lt;img class=&quot;back-image&quot; alt=&quot;&quot; src=&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDkuMC1jMDAwIDc5LmRhNGE3ZTVlZiwgMjAyMi8xMS8yMi0xMzo1MDowNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDI0LjEgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6QzQ4Q0IxMkFBRUZDMTFFREIwRThFMzc3OTlDRTMyNUIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6QzQ4Q0IxMkJBRUZDMTFFREIwRThFMzc3OTlDRTMyNUIiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpDNDhDQjEyOEFFRkMxMUVEQjBFOEUzNzc5OUNFMzI1QiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpDNDhDQjEyOUFFRkMxMUVEQjBFOEUzNzc5OUNFMzI1QiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PgbFSzAAAAFGSURBVHjaYvz//z/DQAImhgEGow4gywHLD2zON8gPeN+9dk4/pQ5gJDURzty2or513awGGP/RnH2MdAsBdMurAlMbKY4DUAgQg2dsXV4vm+z4H4anb1nWQKxefHhALSfKAbS0nKADaG05XgfQw3KcDqCX5VgdQE/LQRilIELP50byWheSXYMmUrPo1ZBVuqAqrXABoyS8/fSBgXN90nl6lP/ryyc7GqtqH0ApCT99+ypArwqIj4v7A9a6ABj/DW3rZ9fTMgqkhMUfwHyPtSgGJTrkRAhKlLRMhMwNDQ0oLjRR0z3AyczGePjGOQcQ//D1sw5cLOwMJqo6B2kRHRgOoLcjsDqAno7A6QB6OQKvA+jhCIIOoLUjiHIALkeI8wp+1FVUP0GXJhm2ckI/z/89XZpkuBzRuWrWBKrWhqM9oxHpAIAAAwBV1hmIioz+GAAAAABJRU5ErkJggg==&quot;&gt;Back to products&lt;/button&gt;&lt;/div&gt;&lt;/div&gt;&lt;/header&gt;&lt;div id=&quot;inventory_item_container&quot; class=&quot;inventory_item_container&quot; data-test=&quot;inventory-container&quot; role=&quot;main&quot;&gt;&lt;div class=&quot;inventory_details&quot;&gt;&lt;div class=&quot;inventory_details_container&quot; data-test=&quot;inventory-item&quot;&gt;&lt;div class=&quot;inventory_details_img_container&quot;&gt;&lt;img alt=&quot;Sauce Labs Backpack&quot; class=&quot;inventory_details_img&quot; data-test=&quot;item-sauce-labs-backpack-img&quot; src=&quot;/assets/sauce-backpack-1200x1500-CjRW-Djj.jpg&quot;&gt;&lt;/div&gt;&lt;div class=&quot;inventory_details_desc_container&quot;&gt;&lt;div class=&quot;inventory_details_name large_size&quot; data-test=&quot;inventory-item-name&quot;&gt;Sauce Labs Backpack&lt;/div&gt;&lt;div class=&quot;inventory_details_desc large_size&quot; data-test=&quot;inventory-item-desc&quot;&gt;carry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection.&lt;/div&gt;&lt;div class=&quot;inventory_details_price&quot; data-test=&quot;inventory-item-price&quot;&gt;$29.99&lt;/div&gt;&lt;button class=&quot;btn btn_secondary btn_small btn_inventory&quot; data-test=&quot;remove&quot; id=&quot;remove&quot; name=&quot;remove&quot;&gt;Remove&lt;/button&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;footer class=&quot;footer&quot; data-test=&quot;footer&quot;&gt;&lt;ul class=&quot;social&quot;&gt;&lt;li class=&quot;social_x&quot;&gt;&lt;a href=&quot;https://x.com/saucelabs&quot; target=&quot;_blank&quot; rel=&quot;noreferrer&quot; data-test=&quot;social-x&quot;&gt;X&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;social_facebook&quot;&gt;&lt;a href=&quot;https://www.facebook.com/saucelabs&quot; target=&quot;_blank&quot; rel=&quot;noreferrer&quot; data-test=&quot;social-facebook&quot;&gt;Facebook&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;social_linkedin&quot;&gt;&lt;a href=&quot;https://www.linkedin.com/company/sauce-labs/&quot; target=&quot;_blank&quot; rel=&quot;noreferrer&quot; data-test=&quot;social-linkedin&quot;&gt;LinkedIn&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;div class=&quot;footer_copy&quot; data-test=&quot;footer-copy&quot;&gt;© 2026 Sauce Labs. All Rights Reserved. Terms of Service | Privacy Policy&lt;/div&gt;&lt;/footer&gt;&lt;/div&gt;&lt;/div&gt;
+
+
+
+&lt;/body&gt;&lt;/html&gt;]
+	at com.saucecode.test.CheckoutTest.checkouttext(CheckoutTest.java:14)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2041996211", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2041996211'><pre>java.lang.AssertionError: expected [Checkout:Your information] but found [&lt;html lang=&quot;en&quot;&gt;&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;link rel=&quot;icon&quot; href=&quot;/favicon.ico&quot;&gt;
+  &lt;meta name=&quot;robots&quot; content=&quot;noindex&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+  &lt;meta name=&quot;theme-color&quot; content=&quot;#ffffff&quot;&gt;
+  &lt;meta name=&quot;description&quot; content=&quot;Sauce Labs Swag Labs app&quot;&gt;
+  &lt;link rel=&quot;apple-touch-icon&quot; href=&quot;/icon-192x192.png&quot;&gt;
+  &lt;link rel=&quot;manifest&quot; href=&quot;/manifest.json&quot;&gt;
+
+  &lt;!-- Single Page Apps for GitHub Pages --&gt;
+  &lt;script type=&quot;text/javascript&quot;&gt;
+    // https://github.com/rafgraph/spa-github-pages
+    (function(l) {
+      if (l.search[1] === &apos;/&apos; ) {
+        var decoded = l.search.slice(1).split(&apos;&amp;&apos;).map(function(s) {
+          return s.replace(/~and~/g, &apos;&amp;&apos;)
+        }).join(&apos;?&apos;);
+        window.history.replaceState(null, null,
+                l.pathname.slice(0, -1) + decoded + l.hash
+        );
+      }
+    }(window.location))
+  &lt;/script&gt;
+
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&amp;amp;family=DM+Sans:wght@400;500&quot;&gt;
+  &lt;title&gt;Swag Labs&lt;/title&gt;
+  &lt;script type=&quot;module&quot; crossorigin=&quot;&quot; src=&quot;/assets/index-D3OxT1jE.js&quot;&gt;&lt;/script&gt;
+  &lt;link rel=&quot;stylesheet&quot; crossorigin=&quot;&quot; href=&quot;/assets/index-aSZoiKGF.css&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;noscript&gt;You need to enable JavaScript to run this app.&lt;/noscript&gt;
+  &lt;div id=&quot;root&quot;&gt;&lt;div id=&quot;page_wrapper&quot;&gt;&lt;div id=&quot;contents_wrapper&quot;&gt;&lt;header id=&quot;header_container&quot; class=&quot;header_container inventory_details&quot; data-test=&quot;header-container&quot;&gt;&lt;div class=&quot;primary_header&quot; data-test=&quot;primary-header&quot;&gt;&lt;div id=&quot;menu_button_container&quot;&gt;&lt;div&gt;&lt;div&gt;&lt;div class=&quot;bm-burger-button&quot; style=&quot;z-index: 1000;&quot;&gt;&lt;button type=&quot;button&quot; id=&quot;react-burger-menu-btn&quot; style=&quot;position: absolute; left: 0px; top: 0px; z-index: 1; width: 100%; height: 100%; margin: 0px; padding: 0px; border-width: medium; border-style: none; border-color: currentcolor; border-image: none; font-size: 0px; background: transparent; cursor: pointer;&quot;&gt;Open Menu&lt;/button&gt;&lt;img class=&quot;bm-icon&quot; alt=&quot;Open Menu&quot; data-test=&quot;open-menu&quot; srcset=&quot;data:image/svg+xml,%3csvg%20width=&apos;32&apos;%20height=&apos;32&apos;%20viewBox=&apos;0%200%2016%2016&apos;%20fill=&apos;none&apos;%20xmlns=&apos;http://www.w3.org/2000/svg&apos;%3e%3cpath%20fill-rule=&apos;evenodd&apos;%20clip-rule=&apos;evenodd&apos;%20d=&apos;M0.666626%202.83333C0.666626%202.3731%201.00863%202%201.43051%202H14.5694C14.9913%202%2015.3333%202.3731%2015.3333%202.83333C15.3333%203.29357%2014.9913%203.66667%2014.5694%203.66667H1.43051C1.00863%203.66667%200.666626%203.29357%200.666626%202.83333ZM0.666626%207.5C0.666626%207.03976%201.00863%206.66667%201.43051%206.66667H14.5694C14.9913%206.66667%2015.3333%207.03976%2015.3333%207.5C15.3333%207.96024%2014.9913%208.33333%2014.5694%208.33333H1.43051C1.00863%208.33333%200.666626%207.96024%200.666626%207.5ZM1.43051%2011.3333C1.00863%2011.3333%200.666626%2011.7064%200.666626%2012.1667C0.666626%2012.6269%201.00863%2013%201.43051%2013H14.5694C14.9913%2013%2015.3333%2012.6269%2015.3333%2012.1667C15.3333%2011.7064%2014.9913%2011.3333%2014.5694%2011.3333H1.43051Z&apos;%20fill=&apos;%23132322&apos;%20/%3e%3c/svg%3e&quot; src=&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDkuMC1jMDAwIDc5LmRhNGE3ZTVlZiwgMjAyMi8xMS8yMi0xMzo1MDowNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDI0LjEgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6QTA3QzBCMEVBRUYzMTFFREIwRThFMzc3OTlDRTMyNUIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6QTA3QzBCMEZBRUYzMTFFREIwRThFMzc3OTlDRTMyNUIiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpBMDdDMEIwQ0FFRjMxMUVEQjBFOEUzNzc5OUNFMzI1QiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpBMDdDMEIwREFFRjMxMUVEQjBFOEUzNzc5OUNFMzI1QiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pq0LVkQAAAERSURBVHjaYvz//z/DQAImhgEGow5gARE379wx8IuN2f/2/XsBeliqqqj4YMHkKYHqKioXwCEwb+mSAnpZDgK3799XmL9sWT48CrQ1NS/QO+gtTUwOgmhGWDY8c+GCw9NnzxToYbm0lNQDEwODAygOGM2Gow4Y0ILo+YsXCgtWLM//+OkzXcoCfj7eDwkRURMlJcQfgB0wf/mygr6ZM/Pp6XNg7mOsKiwqGBxRkBAZNQFEf/r8hZ8elvLx8nxMiIyeMFoQjTpg8BREA1kdgx2wcdu2hOSiwvn09HlfY1NhXHj4BHAUHDt9yoHeQX/t5k19eBpIio6ZAGoo0styYUHBD4lRURNHC6JRB4w6AAQAAgwA/fRn191dMT8AAAAASUVORK5CYII=&quot; style=&quot;width: 100%; height: 100%;&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;div id=&quot;&quot; class=&quot;bm-menu-wrap&quot; aria-hidden=&quot;true&quot; hidden=&quot;true&quot; style=&quot;position: fixed; right: inherit; z-index: 1100; width: 300px; height: 100%; transform: translate3d(-100%, 0px, 0px); transition: 0.5s;&quot;&gt;&lt;div class=&quot;bm-menu&quot; style=&quot;height: 100%; box-sizing: border-box; overflow: auto;&quot;&gt;&lt;nav class=&quot;bm-item-list&quot; style=&quot;height: 100%;&quot;&gt;&lt;a id=&quot;inventory_sidebar_link&quot; class=&quot;bm-item menu-item&quot; href=&quot;#&quot; data-test=&quot;inventory-sidebar-link&quot; role=&quot;button&quot; tabindex=&quot;-1&quot; style=&quot;display: block;&quot;&gt;All Items&lt;/a&gt;&lt;a id=&quot;dynamic_catalog_sidebar_link&quot; class=&quot;bm-item menu-item&quot; href=&quot;#&quot; data-test=&quot;dynamic-catalog-sidebar-link&quot; role=&quot;button&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;dynamic_catalog_submenu&quot; tabindex=&quot;-1&quot; style=&quot;display: block;&quot;&gt;Dynamic Catalog&lt;span class=&quot;submenu-chevron&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;&lt;/a&gt;&lt;a id=&quot;about_sidebar_link&quot; class=&quot;bm-item menu-item&quot; href=&quot;https://saucelabs.com/&quot; data-test=&quot;about-sidebar-link&quot; tabindex=&quot;-1&quot; style=&quot;display: block;&quot;&gt;About&lt;/a&gt;&lt;a id=&quot;logout_sidebar_link&quot; class=&quot;bm-item menu-item&quot; href=&quot;#&quot; data-test=&quot;logout-sidebar-link&quot; role=&quot;button&quot; tabindex=&quot;-1&quot; style=&quot;display: block;&quot;&gt;Logout&lt;/a&gt;&lt;a id=&quot;reset_sidebar_link&quot; class=&quot;bm-item menu-item&quot; href=&quot;#&quot; data-test=&quot;reset-sidebar-link&quot; role=&quot;button&quot; tabindex=&quot;-1&quot; style=&quot;display: block;&quot;&gt;Reset App State&lt;/a&gt;&lt;/nav&gt;&lt;/div&gt;&lt;div&gt;&lt;div class=&quot;bm-cross-button&quot; style=&quot;position: absolute; width: 24px; height: 24px; right: 8px; top: 8px;&quot;&gt;&lt;button type=&quot;button&quot; id=&quot;react-burger-cross-btn&quot; tabindex=&quot;-1&quot; style=&quot;position: absolute; left: 0px; top: 0px; z-index: 1; width: 100%; height: 100%; margin: 0px; padding: 0px; border-width: medium; border-style: none; border-color: currentcolor; border-image: none; font-size: 0px; background: transparent; cursor: pointer;&quot;&gt;Close Menu&lt;/button&gt;&lt;img class=&quot;bm-cross&quot; alt=&quot;Close Menu&quot; data-test=&quot;close-menu&quot; srcset=&quot;data:image/svg+xml,%3csvg%20width=&apos;32&apos;%20height=&apos;32&apos;%20viewBox=&apos;0%200%2016%2016&apos;%20fill=&apos;none&apos;%20xmlns=&apos;http://www.w3.org/2000/svg&apos;%3e%3cpath%20fill-rule=&apos;evenodd&apos;%20clip-rule=&apos;evenodd&apos;%20d=&apos;M2.22528%202.22552C2.55072%201.90009%203.07835%201.90009%203.40379%202.22552L7.99998%206.82172L12.5962%202.22552C12.9216%201.90009%2013.4493%201.90009%2013.7747%202.22552C14.1001%202.55096%2014.1001%203.0786%2013.7747%203.40403L9.1785%208.00023L13.7747%2012.5964C14.1001%2012.9219%2014.1001%2013.4495%2013.7747%2013.7749C13.4493%2014.1004%2012.9216%2014.1004%2012.5962%2013.7749L7.99998%209.17874L3.40379%2013.7749C3.07835%2014.1004%202.55072%2014.1004%202.22528%2013.7749C1.89984%2013.4495%201.89984%2012.9219%202.22528%2012.5964L6.82147%208.00023L2.22528%203.40403C1.89984%203.0786%201.89984%202.55096%202.22528%202.22552Z&apos;%20fill=&apos;%23132322&apos;%20/%3e%3c/svg%3e&quot; src=&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDkuMC1jMDAwIDc5LmRhNGE3ZTVlZiwgMjAyMi8xMS8yMi0xMzo1MDowNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDI0LjEgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NkNCNjBCQjlBRUY4MTFFREIwRThFMzc3OTlDRTMyNUIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NkNCNjBCQkFBRUY4MTFFREIwRThFMzc3OTlDRTMyNUIiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpBMDdDMEIxNEFFRjMxMUVEQjBFOEUzNzc5OUNFMzI1QiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo2Q0I2MEJCOEFFRjgxMUVEQjBFOEUzNzc5OUNFMzI1QiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PtV59sYAAAFSSURBVHjaYvz//z/DQAImhgEGow7AcMC0uXPrRTTU/3uFh5//8uWLAKUWgMyITEvbDzJzKtBsDAWgRIiMhdXV/sOwZ1jY+c+fPwugqyEWg/SCzEA2E10NRgi42dkfgLFPXbxgEJacvJ+ckADpAekFmQETM9M3uEAwBD4BXe2B5mpSQwKbz0H8T1jMwGoAJY4gxXKcDiDXEaRajtcBpDqCHMsJOoBYR5BrOVEOIOQISiwHYUZiK6PP0Gx1Gku2Qs9qK+fOdeTl4flAjLmMpNSG2ByBDEi1HGs5QE50kBrseEtCgkEGxbjkaFobYiteKS22mSgt202RyneyHEFp2U5p3UGVioUSR1CtYiHXEQzUrFjIcQTVLCfXEVS1nBxHYGim1HJ8johITd1P0AHUsByfIwg6YMqc2Q0ghVFpqfspsRybIyYDzSa7Oh7tmg1bBwAEGAACANpiovW4dgAAAABJRU5ErkJggg==&quot; style=&quot;width: 100%; height: 100%;&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;header_label&quot;&gt;&lt;div class=&quot;app_logo&quot;&gt;Swag Labs&lt;/div&gt;&lt;/div&gt;&lt;div id=&quot;shopping_cart_container&quot; class=&quot;shopping_cart_container&quot;&gt;&lt;a class=&quot;shopping_cart_link&quot; data-test=&quot;shopping-cart-link&quot; role=&quot;button&quot; aria-label=&quot;Cart, 1 items&quot;&gt;&lt;span class=&quot;shopping_cart_badge&quot; data-test=&quot;shopping-cart-badge&quot;&gt;1&lt;/span&gt;&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;header_secondary_container&quot; data-test=&quot;secondary-header&quot;&gt;&lt;div class=&quot;left_component&quot;&gt;&lt;button class=&quot;btn btn_secondary back btn_large inventory_details_back_button&quot; data-test=&quot;back-to-products&quot; id=&quot;back-to-products&quot; name=&quot;back-to-products&quot;&gt;&lt;img class=&quot;back-image&quot; alt=&quot;&quot; src=&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDkuMC1jMDAwIDc5LmRhNGE3ZTVlZiwgMjAyMi8xMS8yMi0xMzo1MDowNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDI0LjEgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6QzQ4Q0IxMkFBRUZDMTFFREIwRThFMzc3OTlDRTMyNUIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6QzQ4Q0IxMkJBRUZDMTFFREIwRThFMzc3OTlDRTMyNUIiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpDNDhDQjEyOEFFRkMxMUVEQjBFOEUzNzc5OUNFMzI1QiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpDNDhDQjEyOUFFRkMxMUVEQjBFOEUzNzc5OUNFMzI1QiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PgbFSzAAAAFGSURBVHjaYvz//z/DQAImhgEGow4gywHLD2zON8gPeN+9dk4/pQ5gJDURzty2or513awGGP/RnH2MdAsBdMurAlMbKY4DUAgQg2dsXV4vm+z4H4anb1nWQKxefHhALSfKAbS0nKADaG05XgfQw3KcDqCX5VgdQE/LQRilIELP50byWheSXYMmUrPo1ZBVuqAqrXABoyS8/fSBgXN90nl6lP/ryyc7GqtqH0ApCT99+ypArwqIj4v7A9a6ABj/DW3rZ9fTMgqkhMUfwHyPtSgGJTrkRAhKlLRMhMwNDQ0oLjRR0z3AyczGePjGOQcQ//D1sw5cLOwMJqo6B2kRHRgOoLcjsDqAno7A6QB6OQKvA+jhCIIOoLUjiHIALkeI8wp+1FVUP0GXJhm2ckI/z/89XZpkuBzRuWrWBKrWhqM9oxHpAIAAAwBV1hmIioz+GAAAAABJRU5ErkJggg==&quot;&gt;Back to products&lt;/button&gt;&lt;/div&gt;&lt;/div&gt;&lt;/header&gt;&lt;div id=&quot;inventory_item_container&quot; class=&quot;inventory_item_container&quot; data-test=&quot;inventory-container&quot; role=&quot;main&quot;&gt;&lt;div class=&quot;inventory_details&quot;&gt;&lt;div class=&quot;inventory_details_container&quot; data-test=&quot;inventory-item&quot;&gt;&lt;div class=&quot;inventory_details_img_container&quot;&gt;&lt;img alt=&quot;Sauce Labs Backpack&quot; class=&quot;inventory_details_img&quot; data-test=&quot;item-sauce-labs-backpack-img&quot; src=&quot;/assets/sauce-backpack-1200x1500-CjRW-Djj.jpg&quot;&gt;&lt;/div&gt;&lt;div class=&quot;inventory_details_desc_container&quot;&gt;&lt;div class=&quot;inventory_details_name large_size&quot; data-test=&quot;inventory-item-name&quot;&gt;Sauce Labs Backpack&lt;/div&gt;&lt;div class=&quot;inventory_details_desc large_size&quot; data-test=&quot;inventory-item-desc&quot;&gt;carry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection.&lt;/div&gt;&lt;div class=&quot;inventory_details_price&quot; data-test=&quot;inventory-item-price&quot;&gt;$29.99&lt;/div&gt;&lt;button class=&quot;btn btn_secondary btn_small btn_inventory&quot; data-test=&quot;remove&quot; id=&quot;remove&quot; name=&quot;remove&quot;&gt;Remove&lt;/button&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;footer class=&quot;footer&quot; data-test=&quot;footer&quot;&gt;&lt;ul class=&quot;social&quot;&gt;&lt;li class=&quot;social_x&quot;&gt;&lt;a href=&quot;https://x.com/saucelabs&quot; target=&quot;_blank&quot; rel=&quot;noreferrer&quot; data-test=&quot;social-x&quot;&gt;X&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;social_facebook&quot;&gt;&lt;a href=&quot;https://www.facebook.com/saucelabs&quot; target=&quot;_blank&quot; rel=&quot;noreferrer&quot; data-test=&quot;social-facebook&quot;&gt;Facebook&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;social_linkedin&quot;&gt;&lt;a href=&quot;https://www.linkedin.com/company/sauce-labs/&quot; target=&quot;_blank&quot; rel=&quot;noreferrer&quot; data-test=&quot;social-linkedin&quot;&gt;LinkedIn&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;div class=&quot;footer_copy&quot; data-test=&quot;footer-copy&quot;&gt;© 2026 Sauce Labs. All Rights Reserved. Terms of Service | Privacy Policy&lt;/div&gt;&lt;/footer&gt;&lt;/div&gt;&lt;/div&gt;
+
+
+
+&lt;/body&gt;&lt;/html&gt;]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at com.saucecode.test.CheckoutTest.checkouttext(CheckoutTest.java:14)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.saucecode.test.CheckoutTest@292b08d6</td></tr>
+<tr>
+<td title='com.saucecode.test.CartPageTest.buttonenable()'><b>buttonenable</b><br>Test class: com.saucecode.test.CartPageTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;remove-sauce-labs-backpack&quot;]&quot;}
+  (Session info: chrome=154.0.8037.93)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: &apos;4.45.0&apos;, revision: &apos;cd6a3cd cd6a3cdfca6970f62e5bc8344109d0fe0e2af05e&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;26.3.1&apos;, java.version: &apos;21.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [20a9718d2df7f960293c88d51d78806c, findElement {using=xpath, value=//*[@id=&quot;remove-sauce-labs-backpack&quot;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.93, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: /var/folders/_x/s37vvg593d3...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56259}, goog:processID: 43904, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:56259/devtoo..., se:cdpVersion: 154.0.8037.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 20a9718d2df7f960293c88d51d78806c
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:575)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:173)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:396)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:390)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.isEnabled(Unknown Source)
+	at com.saucecode.page.SauceCartPage.remove(SauceCartPage.java:53)
+	at com.saucecode.test.CartPageTest.buttonenable(CartPageTest.java:29)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1396851684", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1396851684'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;remove-sauce-labs-backpack&quot;]&quot;}
+  (Session info: chrome=154.0.8037.93)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: &apos;4.45.0&apos;, revision: &apos;cd6a3cd cd6a3cdfca6970f62e5bc8344109d0fe0e2af05e&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;26.3.1&apos;, java.version: &apos;21.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [20a9718d2df7f960293c88d51d78806c, findElement {using=xpath, value=//*[@id=&quot;remove-sauce-labs-backpack&quot;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.93, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: /var/folders/_x/s37vvg593d3...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56259}, goog:processID: 43904, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:56259/devtoo..., se:cdpVersion: 154.0.8037.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 20a9718d2df7f960293c88d51d78806c
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:575)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:173)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:396)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:390)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.isEnabled(Unknown Source)
+	at com.saucecode.page.SauceCartPage.remove(SauceCartPage.java:53)
+	at com.saucecode.test.CartPageTest.buttonenable(CartPageTest.java:29)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.saucecode.test.CartPageTest@206a70ef</td></tr>
+<tr>
+<td title='com.saucecode.test.CartPageTest.itemincart()'><b>itemincart</b><br>Test class: com.saucecode.test.CartPageTest</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: chrome=154.0.8037.93)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Build info: version: &apos;4.45.0&apos;, revision: &apos;cd6a3cd cd6a3cdfca6970f62e5bc8344109d0fe0e2af05e&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;26.3.1&apos;, java.version: &apos;21.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [20a9718d2df7f960293c88d51d78806c, clickElement {id=f.0619AA9FD81982DC95D37AA753D39FB6.d.B30A29EE4926EF9E27AB56E6F65969E1.e.30}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.93, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: /var/folders/_x/s37vvg593d3...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56259}, goog:processID: 43904, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:56259/devtoo..., se:cdpVersion: 154.0.8037.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (20a9718d2df7f960293c88d51d78806c)] -&gt; xpath: //*[@id=&quot;shopping_cart_container&quot;]/a]
+Session ID: 20a9718d2df7f960293c88d51d78806c
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:575)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:225)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
+	at com.saucecode.page.SauceCartPage.cartbasket(SauceCartPage.java:44)
+	at com.saucecode.test.CartPageTest.itemincart(CartPageTest.java:17)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace930900166", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace930900166'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: chrome=154.0.8037.93)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Build info: version: &apos;4.45.0&apos;, revision: &apos;cd6a3cd cd6a3cdfca6970f62e5bc8344109d0fe0e2af05e&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;26.3.1&apos;, java.version: &apos;21.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [20a9718d2df7f960293c88d51d78806c, clickElement {id=f.0619AA9FD81982DC95D37AA753D39FB6.d.B30A29EE4926EF9E27AB56E6F65969E1.e.30}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.93, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: /var/folders/_x/s37vvg593d3...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56259}, goog:processID: 43904, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:56259/devtoo..., se:cdpVersion: 154.0.8037.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (20a9718d2df7f960293c88d51d78806c)] -&gt; xpath: //*[@id=&quot;shopping_cart_container&quot;]/a]
+Session ID: 20a9718d2df7f960293c88d51d78806c
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:575)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:225)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
+	at com.saucecode.page.SauceCartPage.cartbasket(SauceCartPage.java:44)
+	at com.saucecode.test.CartPageTest.itemincart(CartPageTest.java:17)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.saucecode.test.CartPageTest@206a70ef</td></tr>
+<tr>
+<td title='com.saucecode.test.CartPageTest.textverify()'><b>textverify</b><br>Test class: com.saucecode.test.CartPageTest</td>
+<td><div><pre>java.lang.AssertionError: expected [Your Cart] but found [&lt;html lang=&quot;en&quot;&gt;&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;link rel=&quot;icon&quot; href=&quot;/favicon.ico&quot;&gt;
+  &lt;meta name=&quot;robots&quot; content=&quot;noindex&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+  &lt;meta name=&quot;theme-color&quot; content=&quot;#ffffff&quot;&gt;
+  &lt;meta name=&quot;description&quot; content=&quot;Sauce Labs Swag Labs app&quot;&gt;
+  &lt;link rel=&quot;apple-touch-icon&quot; href=&quot;/icon-192x192.png&quot;&gt;
+  &lt;link rel=&quot;manifest&quot; href=&quot;/manifest.json&quot;&gt;
+
+  &lt;!-- Single Page Apps for GitHub Pages --&gt;
+  &lt;script type=&quot;text/javascript&quot;&gt;
+    // https://github.com/rafgraph/spa-github-pages
+    (function(l) {
+      if (l.search[1] === &apos;/&apos; ) {
+        var decoded = l.search.slice(1).split(&apos;&amp;&apos;).map(function(s) {
+          return s.replace(/~and~/g, &apos;&amp;&apos;)
+        }).join(&apos;?&apos;);
+        window.history.replaceState(null, null,
+                l.pathname.slice(0, -1) + decoded + l.hash
+        );
+      }
+    }(window.location))
+  &lt;/script&gt;
+
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&amp;amp;family=DM+Sans:wght@400;500&quot;&gt;
+  &lt;title&gt;Swag Labs&lt;/title&gt;
+  &lt;script type=&quot;module&quot; crossorigin=&quot;&quot; src=&quot;/assets/index-D3OxT1jE.js&quot;&gt;&lt;/script&gt;
+  &lt;link rel=&quot;stylesheet&quot; crossorigin=&quot;&quot; href=&quot;/assets/index-aSZoiKGF.css&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;noscript&gt;You need to enable JavaScript to run this app.&lt;/noscript&gt;
+  &lt;div id=&quot;root&quot;&gt;&lt;div id=&quot;page_wrapper&quot;&gt;&lt;div id=&quot;contents_wrapper&quot;&gt;&lt;header id=&quot;header_container&quot; class=&quot;header_container inventory_details&quot; data-test=&quot;header-container&quot;&gt;&lt;div class=&quot;primary_header&quot; data-test=&quot;primary-header&quot;&gt;&lt;div id=&quot;menu_button_container&quot;&gt;&lt;div&gt;&lt;div&gt;&lt;div class=&quot;bm-burger-button&quot; style=&quot;z-index: 1000;&quot;&gt;&lt;button type=&quot;button&quot; id=&quot;react-burger-menu-btn&quot; style=&quot;position: absolute; left: 0px; top: 0px; z-index: 1; width: 100%; height: 100%; margin: 0px; padding: 0px; border-width: medium; border-style: none; border-color: currentcolor; border-image: none; font-size: 0px; background: transparent; cursor: pointer;&quot;&gt;Open Menu&lt;/button&gt;&lt;img class=&quot;bm-icon&quot; alt=&quot;Open Menu&quot; data-test=&quot;open-menu&quot; srcset=&quot;data:image/svg+xml,%3csvg%20width=&apos;32&apos;%20height=&apos;32&apos;%20viewBox=&apos;0%200%2016%2016&apos;%20fill=&apos;none&apos;%20xmlns=&apos;http://www.w3.org/2000/svg&apos;%3e%3cpath%20fill-rule=&apos;evenodd&apos;%20clip-rule=&apos;evenodd&apos;%20d=&apos;M0.666626%202.83333C0.666626%202.3731%201.00863%202%201.43051%202H14.5694C14.9913%202%2015.3333%202.3731%2015.3333%202.83333C15.3333%203.29357%2014.9913%203.66667%2014.5694%203.66667H1.43051C1.00863%203.66667%200.666626%203.29357%200.666626%202.83333ZM0.666626%207.5C0.666626%207.03976%201.00863%206.66667%201.43051%206.66667H14.5694C14.9913%206.66667%2015.3333%207.03976%2015.3333%207.5C15.3333%207.96024%2014.9913%208.33333%2014.5694%208.33333H1.43051C1.00863%208.33333%200.666626%207.96024%200.666626%207.5ZM1.43051%2011.3333C1.00863%2011.3333%200.666626%2011.7064%200.666626%2012.1667C0.666626%2012.6269%201.00863%2013%201.43051%2013H14.5694C14.9913%2013%2015.3333%2012.6269%2015.3333%2012.1667C15.3333%2011.7064%2014.9913%2011.3333%2014.5694%2011.3333H1.43051Z&apos;%20fill=&apos;%23132322&apos;%20/%3e%3c/svg%3e&quot; src=&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDkuMC1jMDAwIDc5LmRhNGE3ZTVlZiwgMjAyMi8xMS8yMi0xMzo1MDowNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDI0LjEgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6QTA3QzBCMEVBRUYzMTFFREIwRThFMzc3OTlDRTMyNUIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6QTA3QzBCMEZBRUYzMTFFREIwRThFMzc3OTlDRTMyNUIiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpBMDdDMEIwQ0FFRjMxMUVEQjBFOEUzNzc5OUNFMzI1QiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpBMDdDMEIwREFFRjMxMUVEQjBFOEUzNzc5OUNFMzI1QiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pq0LVkQAAAERSURBVHjaYvz//z/DQAImhgEGow5gARE379wx8IuN2f/2/XsBeliqqqj4YMHkKYHqKioXwCEwb+mSAnpZDgK3799XmL9sWT48CrQ1NS/QO+gtTUwOgmhGWDY8c+GCw9NnzxToYbm0lNQDEwODAygOGM2Gow4Y0ILo+YsXCgtWLM//+OkzXcoCfj7eDwkRURMlJcQfgB0wf/mygr6ZM/Pp6XNg7mOsKiwqGBxRkBAZNQFEf/r8hZ8elvLx8nxMiIyeMFoQjTpg8BREA1kdgx2wcdu2hOSiwvn09HlfY1NhXHj4BHAUHDt9yoHeQX/t5k19eBpIio6ZAGoo0styYUHBD4lRURNHC6JRB4w6AAQAAgwA/fRn191dMT8AAAAASUVORK5CYII=&quot; style=&quot;width: 100%; height: 100%;&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;div id=&quot;&quot; class=&quot;bm-menu-wrap&quot; aria-hidden=&quot;true&quot; hidden=&quot;true&quot; style=&quot;position: fixed; right: inherit; z-index: 1100; width: 300px; height: 100%; transform: translate3d(-100%, 0px, 0px); transition: 0.5s;&quot;&gt;&lt;div class=&quot;bm-menu&quot; style=&quot;height: 100%; box-sizing: border-box; overflow: auto;&quot;&gt;&lt;nav class=&quot;bm-item-list&quot; style=&quot;height: 100%;&quot;&gt;&lt;a id=&quot;inventory_sidebar_link&quot; class=&quot;bm-item menu-item&quot; href=&quot;#&quot; data-test=&quot;inventory-sidebar-link&quot; role=&quot;button&quot; tabindex=&quot;-1&quot; style=&quot;display: block;&quot;&gt;All Items&lt;/a&gt;&lt;a id=&quot;dynamic_catalog_sidebar_link&quot; class=&quot;bm-item menu-item&quot; href=&quot;#&quot; data-test=&quot;dynamic-catalog-sidebar-link&quot; role=&quot;button&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;dynamic_catalog_submenu&quot; tabindex=&quot;-1&quot; style=&quot;display: block;&quot;&gt;Dynamic Catalog&lt;span class=&quot;submenu-chevron&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;&lt;/a&gt;&lt;a id=&quot;about_sidebar_link&quot; class=&quot;bm-item menu-item&quot; href=&quot;https://saucelabs.com/&quot; data-test=&quot;about-sidebar-link&quot; tabindex=&quot;-1&quot; style=&quot;display: block;&quot;&gt;About&lt;/a&gt;&lt;a id=&quot;logout_sidebar_link&quot; class=&quot;bm-item menu-item&quot; href=&quot;#&quot; data-test=&quot;logout-sidebar-link&quot; role=&quot;button&quot; tabindex=&quot;-1&quot; style=&quot;display: block;&quot;&gt;Logout&lt;/a&gt;&lt;a id=&quot;reset_sidebar_link&quot; class=&quot;bm-item menu-item&quot; href=&quot;#&quot; data-test=&quot;reset-sidebar-link&quot; role=&quot;button&quot; tabindex=&quot;-1&quot; style=&quot;display: block;&quot;&gt;Reset App State&lt;/a&gt;&lt;/nav&gt;&lt;/div&gt;&lt;div&gt;&lt;div class=&quot;bm-cross-button&quot; style=&quot;position: absolute; width: 24px; height: 24px; right: 8px; top: 8px;&quot;&gt;&lt;button type=&quot;button&quot; id=&quot;react-burger-cross-btn&quot; tabindex=&quot;-1&quot; style=&quot;position: absolute; left: 0px; top: 0px; z-index: 1; width: 100%; height: 100%; margin: 0px; padding: 0px; border-width: medium; border-style: none; border-color: currentcolor; border-image: none; font-size: 0px; background: transparent; cursor: pointer;&quot;&gt;Close Menu&lt;/button&gt;&lt;img class=&quot;bm-cross&quot; alt=&quot;Close Menu&quot; data-test=&quot;close-menu&quot; srcset=&quot;data:image/svg+xml,%3csvg%20width=&apos;32&apos;%20height=&apos;32&apos;%20viewBox=&apos;0%200%2016%2016&apos;%20fill=&apos;none&apos;%20xmlns=&apos;http://www.w3.org/2000/svg&apos;%3e%3cpath%20fill-rule=&apos;evenodd&apos;%20clip-rule=&apos;evenodd&apos;%20d=&apos;M2.22528%202.22552C2.55072%201.90009%203.07835%201.90009%203.40379%202.22552L7.99998%206.82172L12.5962%202.22552C12.9216%201.90009%2013.4493%201.90009%2013.7747%202.22552C14.1001%202.55096%2014.1001%203.0786%2013.7747%203.40403L9.1785%208.00023L13.7747%2012.5964C14.1001%2012.9219%2014.1001%2013.4495%2013.7747%2013.7749C13.4493%2014.1004%2012.9216%2014.1004%2012.5962%2013.7749L7.99998%209.17874L3.40379%2013.7749C3.07835%2014.1004%202.55072%2014.1004%202.22528%2013.7749C1.89984%2013.4495%201.89984%2012.9219%202.22528%2012.5964L6.82147%208.00023L2.22528%203.40403C1.89984%203.0786%201.89984%202.55096%202.22528%202.22552Z&apos;%20fill=&apos;%23132322&apos;%20/%3e%3c/svg%3e&quot; src=&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDkuMC1jMDAwIDc5LmRhNGE3ZTVlZiwgMjAyMi8xMS8yMi0xMzo1MDowNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDI0LjEgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NkNCNjBCQjlBRUY4MTFFREIwRThFMzc3OTlDRTMyNUIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NkNCNjBCQkFBRUY4MTFFREIwRThFMzc3OTlDRTMyNUIiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpBMDdDMEIxNEFFRjMxMUVEQjBFOEUzNzc5OUNFMzI1QiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo2Q0I2MEJCOEFFRjgxMUVEQjBFOEUzNzc5OUNFMzI1QiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PtV59sYAAAFSSURBVHjaYvz//z/DQAImhgEGow7AcMC0uXPrRTTU/3uFh5//8uWLAKUWgMyITEvbDzJzKtBsDAWgRIiMhdXV/sOwZ1jY+c+fPwugqyEWg/SCzEA2E10NRgi42dkfgLFPXbxgEJacvJ+ckADpAekFmQETM9M3uEAwBD4BXe2B5mpSQwKbz0H8T1jMwGoAJY4gxXKcDiDXEaRajtcBpDqCHMsJOoBYR5BrOVEOIOQISiwHYUZiK6PP0Gx1Gku2Qs9qK+fOdeTl4flAjLmMpNSG2ByBDEi1HGs5QE50kBrseEtCgkEGxbjkaFobYiteKS22mSgt202RyneyHEFp2U5p3UGVioUSR1CtYiHXEQzUrFjIcQTVLCfXEVS1nBxHYGim1HJ8johITd1P0AHUsByfIwg6YMqc2Q0ghVFpqfspsRybIyYDzSa7Oh7tmg1bBwAEGAACANpiovW4dgAAAABJRU5ErkJggg==&quot; style=&quot;width: 100%; height: 100%;&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;header_label&quot;&gt;&lt;div class=&quot;app_logo&quot;&gt;Swag Labs&lt;/div&gt;&lt;/div&gt;&lt;div id=&quot;shopping_cart_container&quot; class=&quot;shopping_cart_container&quot;&gt;&lt;a class=&quot;shopping_cart_link&quot; data-test=&quot;shopping-cart-link&quot; role=&quot;button&quot; aria-label=&quot;Cart, 1 items&quot;&gt;&lt;span class=&quot;shopping_cart_badge&quot; data-test=&quot;shopping-cart-badge&quot;&gt;1&lt;/span&gt;&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;header_secondary_container&quot; data-test=&quot;secondary-header&quot;&gt;&lt;div class=&quot;left_component&quot;&gt;&lt;button class=&quot;btn btn_secondary back btn_large inventory_details_back_button&quot; data-test=&quot;back-to-products&quot; id=&quot;back-to-products&quot; name=&quot;back-to-products&quot;&gt;&lt;img class=&quot;back-image&quot; alt=&quot;&quot; src=&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDkuMC1jMDAwIDc5LmRhNGE3ZTVlZiwgMjAyMi8xMS8yMi0xMzo1MDowNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDI0LjEgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6QzQ4Q0IxMkFBRUZDMTFFREIwRThFMzc3OTlDRTMyNUIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6QzQ4Q0IxMkJBRUZDMTFFREIwRThFMzc3OTlDRTMyNUIiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpDNDhDQjEyOEFFRkMxMUVEQjBFOEUzNzc5OUNFMzI1QiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpDNDhDQjEyOUFFRkMxMUVEQjBFOEUzNzc5OUNFMzI1QiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PgbFSzAAAAFGSURBVHjaYvz//z/DQAImhgEGow4gywHLD2zON8gPeN+9dk4/pQ5gJDURzty2or513awGGP/RnH2MdAsBdMurAlMbKY4DUAgQg2dsXV4vm+z4H4anb1nWQKxefHhALSfKAbS0nKADaG05XgfQw3KcDqCX5VgdQE/LQRilIELP50byWheSXYMmUrPo1ZBVuqAqrXABoyS8/fSBgXN90nl6lP/ryyc7GqtqH0ApCT99+ypArwqIj4v7A9a6ABj/DW3rZ9fTMgqkhMUfwHyPtSgGJTrkRAhKlLRMhMwNDQ0oLjRR0z3AyczGePjGOQcQ//D1sw5cLOwMJqo6B2kRHRgOoLcjsDqAno7A6QB6OQKvA+jhCIIOoLUjiHIALkeI8wp+1FVUP0GXJhm2ckI/z/89XZpkuBzRuWrWBKrWhqM9oxHpAIAAAwBV1hmIioz+GAAAAABJRU5ErkJggg==&quot;&gt;Back to products&lt;/button&gt;&lt;/div&gt;&lt;/div&gt;&lt;/header&gt;&lt;div id=&quot;inventory_item_container&quot; class=&quot;inventory_item_container&quot; data-test=&quot;inventory-container&quot; role=&quot;main&quot;&gt;&lt;div class=&quot;inventory_details&quot;&gt;&lt;div class=&quot;inventory_details_container&quot; data-test=&quot;inventory-item&quot;&gt;&lt;div class=&quot;inventory_details_img_container&quot;&gt;&lt;img alt=&quot;Sauce Labs Backpack&quot; class=&quot;inventory_details_img&quot; data-test=&quot;item-sauce-labs-backpack-img&quot; src=&quot;/assets/sauce-backpack-1200x1500-CjRW-Djj.jpg&quot;&gt;&lt;/div&gt;&lt;div class=&quot;inventory_details_desc_container&quot;&gt;&lt;div class=&quot;inventory_details_name large_size&quot; data-test=&quot;inventory-item-name&quot;&gt;Sauce Labs Backpack&lt;/div&gt;&lt;div class=&quot;inventory_details_desc large_size&quot; data-test=&quot;inventory-item-desc&quot;&gt;carry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection.&lt;/div&gt;&lt;div class=&quot;inventory_details_price&quot; data-test=&quot;inventory-item-price&quot;&gt;$29.99&lt;/div&gt;&lt;button class=&quot;btn btn_secondary btn_small btn_inventory&quot; data-test=&quot;remove&quot; id=&quot;remove&quot; name=&quot;remove&quot;&gt;Remove&lt;/button&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;footer class=&quot;footer&quot; data-test=&quot;footer&quot;&gt;&lt;ul class=&quot;social&quot;&gt;&lt;li class=&quot;social_x&quot;&gt;&lt;a href=&quot;https://x.com/saucelabs&quot; target=&quot;_blank&quot; rel=&quot;noreferrer&quot; data-test=&quot;social-x&quot;&gt;X&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;social_facebook&quot;&gt;&lt;a href=&quot;https://www.facebook.com/saucelabs&quot; target=&quot;_blank&quot; rel=&quot;noreferrer&quot; data-test=&quot;social-facebook&quot;&gt;Facebook&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;social_linkedin&quot;&gt;&lt;a href=&quot;https://www.linkedin.com/company/sauce-labs/&quot; target=&quot;_blank&quot; rel=&quot;noreferrer&quot; data-test=&quot;social-linkedin&quot;&gt;LinkedIn&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;div class=&quot;footer_copy&quot; data-test=&quot;footer-copy&quot;&gt;© 2026 Sauce Labs. All Rights Reserved. Terms of Service | Privacy Policy&lt;/div&gt;&lt;/footer&gt;&lt;/div&gt;&lt;/div&gt;
+
+
+
+&lt;/body&gt;&lt;/html&gt;]
+	at com.saucecode.test.CartPageTest.textverify(CartPageTest.java:24)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1130160902", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1130160902'><pre>java.lang.AssertionError: expected [Your Cart] but found [&lt;html lang=&quot;en&quot;&gt;&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;link rel=&quot;icon&quot; href=&quot;/favicon.ico&quot;&gt;
+  &lt;meta name=&quot;robots&quot; content=&quot;noindex&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+  &lt;meta name=&quot;theme-color&quot; content=&quot;#ffffff&quot;&gt;
+  &lt;meta name=&quot;description&quot; content=&quot;Sauce Labs Swag Labs app&quot;&gt;
+  &lt;link rel=&quot;apple-touch-icon&quot; href=&quot;/icon-192x192.png&quot;&gt;
+  &lt;link rel=&quot;manifest&quot; href=&quot;/manifest.json&quot;&gt;
+
+  &lt;!-- Single Page Apps for GitHub Pages --&gt;
+  &lt;script type=&quot;text/javascript&quot;&gt;
+    // https://github.com/rafgraph/spa-github-pages
+    (function(l) {
+      if (l.search[1] === &apos;/&apos; ) {
+        var decoded = l.search.slice(1).split(&apos;&amp;&apos;).map(function(s) {
+          return s.replace(/~and~/g, &apos;&amp;&apos;)
+        }).join(&apos;?&apos;);
+        window.history.replaceState(null, null,
+                l.pathname.slice(0, -1) + decoded + l.hash
+        );
+      }
+    }(window.location))
+  &lt;/script&gt;
+
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&amp;amp;family=DM+Sans:wght@400;500&quot;&gt;
+  &lt;title&gt;Swag Labs&lt;/title&gt;
+  &lt;script type=&quot;module&quot; crossorigin=&quot;&quot; src=&quot;/assets/index-D3OxT1jE.js&quot;&gt;&lt;/script&gt;
+  &lt;link rel=&quot;stylesheet&quot; crossorigin=&quot;&quot; href=&quot;/assets/index-aSZoiKGF.css&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;noscript&gt;You need to enable JavaScript to run this app.&lt;/noscript&gt;
+  &lt;div id=&quot;root&quot;&gt;&lt;div id=&quot;page_wrapper&quot;&gt;&lt;div id=&quot;contents_wrapper&quot;&gt;&lt;header id=&quot;header_container&quot; class=&quot;header_container inventory_details&quot; data-test=&quot;header-container&quot;&gt;&lt;div class=&quot;primary_header&quot; data-test=&quot;primary-header&quot;&gt;&lt;div id=&quot;menu_button_container&quot;&gt;&lt;div&gt;&lt;div&gt;&lt;div class=&quot;bm-burger-button&quot; style=&quot;z-index: 1000;&quot;&gt;&lt;button type=&quot;button&quot; id=&quot;react-burger-menu-btn&quot; style=&quot;position: absolute; left: 0px; top: 0px; z-index: 1; width: 100%; height: 100%; margin: 0px; padding: 0px; border-width: medium; border-style: none; border-color: currentcolor; border-image: none; font-size: 0px; background: transparent; cursor: pointer;&quot;&gt;Open Menu&lt;/button&gt;&lt;img class=&quot;bm-icon&quot; alt=&quot;Open Menu&quot; data-test=&quot;open-menu&quot; srcset=&quot;data:image/svg+xml,%3csvg%20width=&apos;32&apos;%20height=&apos;32&apos;%20viewBox=&apos;0%200%2016%2016&apos;%20fill=&apos;none&apos;%20xmlns=&apos;http://www.w3.org/2000/svg&apos;%3e%3cpath%20fill-rule=&apos;evenodd&apos;%20clip-rule=&apos;evenodd&apos;%20d=&apos;M0.666626%202.83333C0.666626%202.3731%201.00863%202%201.43051%202H14.5694C14.9913%202%2015.3333%202.3731%2015.3333%202.83333C15.3333%203.29357%2014.9913%203.66667%2014.5694%203.66667H1.43051C1.00863%203.66667%200.666626%203.29357%200.666626%202.83333ZM0.666626%207.5C0.666626%207.03976%201.00863%206.66667%201.43051%206.66667H14.5694C14.9913%206.66667%2015.3333%207.03976%2015.3333%207.5C15.3333%207.96024%2014.9913%208.33333%2014.5694%208.33333H1.43051C1.00863%208.33333%200.666626%207.96024%200.666626%207.5ZM1.43051%2011.3333C1.00863%2011.3333%200.666626%2011.7064%200.666626%2012.1667C0.666626%2012.6269%201.00863%2013%201.43051%2013H14.5694C14.9913%2013%2015.3333%2012.6269%2015.3333%2012.1667C15.3333%2011.7064%2014.9913%2011.3333%2014.5694%2011.3333H1.43051Z&apos;%20fill=&apos;%23132322&apos;%20/%3e%3c/svg%3e&quot; src=&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDkuMC1jMDAwIDc5LmRhNGE3ZTVlZiwgMjAyMi8xMS8yMi0xMzo1MDowNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDI0LjEgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6QTA3QzBCMEVBRUYzMTFFREIwRThFMzc3OTlDRTMyNUIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6QTA3QzBCMEZBRUYzMTFFREIwRThFMzc3OTlDRTMyNUIiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpBMDdDMEIwQ0FFRjMxMUVEQjBFOEUzNzc5OUNFMzI1QiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpBMDdDMEIwREFFRjMxMUVEQjBFOEUzNzc5OUNFMzI1QiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pq0LVkQAAAERSURBVHjaYvz//z/DQAImhgEGow5gARE379wx8IuN2f/2/XsBeliqqqj4YMHkKYHqKioXwCEwb+mSAnpZDgK3799XmL9sWT48CrQ1NS/QO+gtTUwOgmhGWDY8c+GCw9NnzxToYbm0lNQDEwODAygOGM2Gow4Y0ILo+YsXCgtWLM//+OkzXcoCfj7eDwkRURMlJcQfgB0wf/mygr6ZM/Pp6XNg7mOsKiwqGBxRkBAZNQFEf/r8hZ8elvLx8nxMiIyeMFoQjTpg8BREA1kdgx2wcdu2hOSiwvn09HlfY1NhXHj4BHAUHDt9yoHeQX/t5k19eBpIio6ZAGoo0styYUHBD4lRURNHC6JRB4w6AAQAAgwA/fRn191dMT8AAAAASUVORK5CYII=&quot; style=&quot;width: 100%; height: 100%;&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;div id=&quot;&quot; class=&quot;bm-menu-wrap&quot; aria-hidden=&quot;true&quot; hidden=&quot;true&quot; style=&quot;position: fixed; right: inherit; z-index: 1100; width: 300px; height: 100%; transform: translate3d(-100%, 0px, 0px); transition: 0.5s;&quot;&gt;&lt;div class=&quot;bm-menu&quot; style=&quot;height: 100%; box-sizing: border-box; overflow: auto;&quot;&gt;&lt;nav class=&quot;bm-item-list&quot; style=&quot;height: 100%;&quot;&gt;&lt;a id=&quot;inventory_sidebar_link&quot; class=&quot;bm-item menu-item&quot; href=&quot;#&quot; data-test=&quot;inventory-sidebar-link&quot; role=&quot;button&quot; tabindex=&quot;-1&quot; style=&quot;display: block;&quot;&gt;All Items&lt;/a&gt;&lt;a id=&quot;dynamic_catalog_sidebar_link&quot; class=&quot;bm-item menu-item&quot; href=&quot;#&quot; data-test=&quot;dynamic-catalog-sidebar-link&quot; role=&quot;button&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;dynamic_catalog_submenu&quot; tabindex=&quot;-1&quot; style=&quot;display: block;&quot;&gt;Dynamic Catalog&lt;span class=&quot;submenu-chevron&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;&lt;/a&gt;&lt;a id=&quot;about_sidebar_link&quot; class=&quot;bm-item menu-item&quot; href=&quot;https://saucelabs.com/&quot; data-test=&quot;about-sidebar-link&quot; tabindex=&quot;-1&quot; style=&quot;display: block;&quot;&gt;About&lt;/a&gt;&lt;a id=&quot;logout_sidebar_link&quot; class=&quot;bm-item menu-item&quot; href=&quot;#&quot; data-test=&quot;logout-sidebar-link&quot; role=&quot;button&quot; tabindex=&quot;-1&quot; style=&quot;display: block;&quot;&gt;Logout&lt;/a&gt;&lt;a id=&quot;reset_sidebar_link&quot; class=&quot;bm-item menu-item&quot; href=&quot;#&quot; data-test=&quot;reset-sidebar-link&quot; role=&quot;button&quot; tabindex=&quot;-1&quot; style=&quot;display: block;&quot;&gt;Reset App State&lt;/a&gt;&lt;/nav&gt;&lt;/div&gt;&lt;div&gt;&lt;div class=&quot;bm-cross-button&quot; style=&quot;position: absolute; width: 24px; height: 24px; right: 8px; top: 8px;&quot;&gt;&lt;button type=&quot;button&quot; id=&quot;react-burger-cross-btn&quot; tabindex=&quot;-1&quot; style=&quot;position: absolute; left: 0px; top: 0px; z-index: 1; width: 100%; height: 100%; margin: 0px; padding: 0px; border-width: medium; border-style: none; border-color: currentcolor; border-image: none; font-size: 0px; background: transparent; cursor: pointer;&quot;&gt;Close Menu&lt;/button&gt;&lt;img class=&quot;bm-cross&quot; alt=&quot;Close Menu&quot; data-test=&quot;close-menu&quot; srcset=&quot;data:image/svg+xml,%3csvg%20width=&apos;32&apos;%20height=&apos;32&apos;%20viewBox=&apos;0%200%2016%2016&apos;%20fill=&apos;none&apos;%20xmlns=&apos;http://www.w3.org/2000/svg&apos;%3e%3cpath%20fill-rule=&apos;evenodd&apos;%20clip-rule=&apos;evenodd&apos;%20d=&apos;M2.22528%202.22552C2.55072%201.90009%203.07835%201.90009%203.40379%202.22552L7.99998%206.82172L12.5962%202.22552C12.9216%201.90009%2013.4493%201.90009%2013.7747%202.22552C14.1001%202.55096%2014.1001%203.0786%2013.7747%203.40403L9.1785%208.00023L13.7747%2012.5964C14.1001%2012.9219%2014.1001%2013.4495%2013.7747%2013.7749C13.4493%2014.1004%2012.9216%2014.1004%2012.5962%2013.7749L7.99998%209.17874L3.40379%2013.7749C3.07835%2014.1004%202.55072%2014.1004%202.22528%2013.7749C1.89984%2013.4495%201.89984%2012.9219%202.22528%2012.5964L6.82147%208.00023L2.22528%203.40403C1.89984%203.0786%201.89984%202.55096%202.22528%202.22552Z&apos;%20fill=&apos;%23132322&apos;%20/%3e%3c/svg%3e&quot; src=&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDkuMC1jMDAwIDc5LmRhNGE3ZTVlZiwgMjAyMi8xMS8yMi0xMzo1MDowNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDI0LjEgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NkNCNjBCQjlBRUY4MTFFREIwRThFMzc3OTlDRTMyNUIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NkNCNjBCQkFBRUY4MTFFREIwRThFMzc3OTlDRTMyNUIiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpBMDdDMEIxNEFFRjMxMUVEQjBFOEUzNzc5OUNFMzI1QiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo2Q0I2MEJCOEFFRjgxMUVEQjBFOEUzNzc5OUNFMzI1QiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PtV59sYAAAFSSURBVHjaYvz//z/DQAImhgEGow7AcMC0uXPrRTTU/3uFh5//8uWLAKUWgMyITEvbDzJzKtBsDAWgRIiMhdXV/sOwZ1jY+c+fPwugqyEWg/SCzEA2E10NRgi42dkfgLFPXbxgEJacvJ+ckADpAekFmQETM9M3uEAwBD4BXe2B5mpSQwKbz0H8T1jMwGoAJY4gxXKcDiDXEaRajtcBpDqCHMsJOoBYR5BrOVEOIOQISiwHYUZiK6PP0Gx1Gku2Qs9qK+fOdeTl4flAjLmMpNSG2ByBDEi1HGs5QE50kBrseEtCgkEGxbjkaFobYiteKS22mSgt202RyneyHEFp2U5p3UGVioUSR1CtYiHXEQzUrFjIcQTVLCfXEVS1nBxHYGim1HJ8johITd1P0AHUsByfIwg6YMqc2Q0ghVFpqfspsRybIyYDzSa7Oh7tmg1bBwAEGAACANpiovW4dgAAAABJRU5ErkJggg==&quot; style=&quot;width: 100%; height: 100%;&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;header_label&quot;&gt;&lt;div class=&quot;app_logo&quot;&gt;Swag Labs&lt;/div&gt;&lt;/div&gt;&lt;div id=&quot;shopping_cart_container&quot; class=&quot;shopping_cart_container&quot;&gt;&lt;a class=&quot;shopping_cart_link&quot; data-test=&quot;shopping-cart-link&quot; role=&quot;button&quot; aria-label=&quot;Cart, 1 items&quot;&gt;&lt;span class=&quot;shopping_cart_badge&quot; data-test=&quot;shopping-cart-badge&quot;&gt;1&lt;/span&gt;&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;header_secondary_container&quot; data-test=&quot;secondary-header&quot;&gt;&lt;div class=&quot;left_component&quot;&gt;&lt;button class=&quot;btn btn_secondary back btn_large inventory_details_back_button&quot; data-test=&quot;back-to-products&quot; id=&quot;back-to-products&quot; name=&quot;back-to-products&quot;&gt;&lt;img class=&quot;back-image&quot; alt=&quot;&quot; src=&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDkuMC1jMDAwIDc5LmRhNGE3ZTVlZiwgMjAyMi8xMS8yMi0xMzo1MDowNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDI0LjEgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6QzQ4Q0IxMkFBRUZDMTFFREIwRThFMzc3OTlDRTMyNUIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6QzQ4Q0IxMkJBRUZDMTFFREIwRThFMzc3OTlDRTMyNUIiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpDNDhDQjEyOEFFRkMxMUVEQjBFOEUzNzc5OUNFMzI1QiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpDNDhDQjEyOUFFRkMxMUVEQjBFOEUzNzc5OUNFMzI1QiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PgbFSzAAAAFGSURBVHjaYvz//z/DQAImhgEGow4gywHLD2zON8gPeN+9dk4/pQ5gJDURzty2or513awGGP/RnH2MdAsBdMurAlMbKY4DUAgQg2dsXV4vm+z4H4anb1nWQKxefHhALSfKAbS0nKADaG05XgfQw3KcDqCX5VgdQE/LQRilIELP50byWheSXYMmUrPo1ZBVuqAqrXABoyS8/fSBgXN90nl6lP/ryyc7GqtqH0ApCT99+ypArwqIj4v7A9a6ABj/DW3rZ9fTMgqkhMUfwHyPtSgGJTrkRAhKlLRMhMwNDQ0oLjRR0z3AyczGePjGOQcQ//D1sw5cLOwMJqo6B2kRHRgOoLcjsDqAno7A6QB6OQKvA+jhCIIOoLUjiHIALkeI8wp+1FVUP0GXJhm2ckI/z/89XZpkuBzRuWrWBKrWhqM9oxHpAIAAAwBV1hmIioz+GAAAAABJRU5ErkJggg==&quot;&gt;Back to products&lt;/button&gt;&lt;/div&gt;&lt;/div&gt;&lt;/header&gt;&lt;div id=&quot;inventory_item_container&quot; class=&quot;inventory_item_container&quot; data-test=&quot;inventory-container&quot; role=&quot;main&quot;&gt;&lt;div class=&quot;inventory_details&quot;&gt;&lt;div class=&quot;inventory_details_container&quot; data-test=&quot;inventory-item&quot;&gt;&lt;div class=&quot;inventory_details_img_container&quot;&gt;&lt;img alt=&quot;Sauce Labs Backpack&quot; class=&quot;inventory_details_img&quot; data-test=&quot;item-sauce-labs-backpack-img&quot; src=&quot;/assets/sauce-backpack-1200x1500-CjRW-Djj.jpg&quot;&gt;&lt;/div&gt;&lt;div class=&quot;inventory_details_desc_container&quot;&gt;&lt;div class=&quot;inventory_details_name large_size&quot; data-test=&quot;inventory-item-name&quot;&gt;Sauce Labs Backpack&lt;/div&gt;&lt;div class=&quot;inventory_details_desc large_size&quot; data-test=&quot;inventory-item-desc&quot;&gt;carry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection.&lt;/div&gt;&lt;div class=&quot;inventory_details_price&quot; data-test=&quot;inventory-item-price&quot;&gt;$29.99&lt;/div&gt;&lt;button class=&quot;btn btn_secondary btn_small btn_inventory&quot; data-test=&quot;remove&quot; id=&quot;remove&quot; name=&quot;remove&quot;&gt;Remove&lt;/button&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;footer class=&quot;footer&quot; data-test=&quot;footer&quot;&gt;&lt;ul class=&quot;social&quot;&gt;&lt;li class=&quot;social_x&quot;&gt;&lt;a href=&quot;https://x.com/saucelabs&quot; target=&quot;_blank&quot; rel=&quot;noreferrer&quot; data-test=&quot;social-x&quot;&gt;X&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;social_facebook&quot;&gt;&lt;a href=&quot;https://www.facebook.com/saucelabs&quot; target=&quot;_blank&quot; rel=&quot;noreferrer&quot; data-test=&quot;social-facebook&quot;&gt;Facebook&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;social_linkedin&quot;&gt;&lt;a href=&quot;https://www.linkedin.com/company/sauce-labs/&quot; target=&quot;_blank&quot; rel=&quot;noreferrer&quot; data-test=&quot;social-linkedin&quot;&gt;LinkedIn&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;div class=&quot;footer_copy&quot; data-test=&quot;footer-copy&quot;&gt;© 2026 Sauce Labs. All Rights Reserved. Terms of Service | Privacy Policy&lt;/div&gt;&lt;/footer&gt;&lt;/div&gt;&lt;/div&gt;
+
+
+
+&lt;/body&gt;&lt;/html&gt;]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at com.saucecode.test.CartPageTest.textverify(CartPageTest.java:24)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.saucecode.test.CartPageTest@206a70ef</td></tr>
+<tr>
+<td title='com.saucecode.test.CartPageTest.checkoutbutton()'><b>checkoutbutton</b><br>Test class: com.saucecode.test.CartPageTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;checkout&quot;]&quot;}
+  (Session info: chrome=154.0.8037.93)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: &apos;4.45.0&apos;, revision: &apos;cd6a3cd cd6a3cdfca6970f62e5bc8344109d0fe0e2af05e&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;26.3.1&apos;, java.version: &apos;21.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [20a9718d2df7f960293c88d51d78806c, findElement {using=xpath, value=//*[@id=&quot;checkout&quot;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.93, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: /var/folders/_x/s37vvg593d3...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56259}, goog:processID: 43904, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:56259/devtoo..., se:cdpVersion: 154.0.8037.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 20a9718d2df7f960293c88d51d78806c
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:575)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:173)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:396)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:390)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
+	at com.saucecode.page.SauceCartPage.checkout(SauceCartPage.java:70)
+	at com.saucecode.test.CartPageTest.checkoutbutton(CartPageTest.java:40)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1602785474", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1602785474'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;checkout&quot;]&quot;}
+  (Session info: chrome=154.0.8037.93)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: &apos;4.45.0&apos;, revision: &apos;cd6a3cd cd6a3cdfca6970f62e5bc8344109d0fe0e2af05e&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;26.3.1&apos;, java.version: &apos;21.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [20a9718d2df7f960293c88d51d78806c, findElement {using=xpath, value=//*[@id=&quot;checkout&quot;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.93, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: /var/folders/_x/s37vvg593d3...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56259}, goog:processID: 43904, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:56259/devtoo..., se:cdpVersion: 154.0.8037.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 20a9718d2df7f960293c88d51d78806c
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:575)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:173)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:396)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:390)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
+	at com.saucecode.page.SauceCartPage.checkout(SauceCartPage.java:70)
+	at com.saucecode.test.CartPageTest.checkoutbutton(CartPageTest.java:40)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.saucecode.test.CartPageTest@206a70ef</td></tr>
+<tr>
+<td title='com.saucecode.test.CheckoutTest.checkoutaction()'><b>checkoutaction</b><br>Test class: com.saucecode.test.CheckoutTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#first\-name&quot;}
+  (Session info: chrome=154.0.8037.93)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: &apos;4.45.0&apos;, revision: &apos;cd6a3cd cd6a3cdfca6970f62e5bc8344109d0fe0e2af05e&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;26.3.1&apos;, java.version: &apos;21.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [20a9718d2df7f960293c88d51d78806c, findElement {using=id, value=first-name}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.93, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: /var/folders/_x/s37vvg593d3...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56259}, goog:processID: 43904, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:56259/devtoo..., se:cdpVersion: 154.0.8037.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 20a9718d2df7f960293c88d51d78806c
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:575)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:173)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:396)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:390)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.sendKeys(Unknown Source)
+	at com.saucecode.page.CheckoutPage.enterinfo(CheckoutPage.java:50)
+	at com.saucecode.test.CheckoutTest.checkoutaction(CheckoutTest.java:19)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace310792845", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace310792845'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#first\-name&quot;}
+  (Session info: chrome=154.0.8037.93)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: &apos;4.45.0&apos;, revision: &apos;cd6a3cd cd6a3cdfca6970f62e5bc8344109d0fe0e2af05e&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;26.3.1&apos;, java.version: &apos;21.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [20a9718d2df7f960293c88d51d78806c, findElement {using=id, value=first-name}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.93, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: /var/folders/_x/s37vvg593d3...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56259}, goog:processID: 43904, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:56259/devtoo..., se:cdpVersion: 154.0.8037.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 20a9718d2df7f960293c88d51d78806c
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:575)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:173)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:396)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:390)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.sendKeys(Unknown Source)
+	at com.saucecode.page.CheckoutPage.enterinfo(CheckoutPage.java:50)
+	at com.saucecode.test.CheckoutTest.checkoutaction(CheckoutTest.java:19)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.saucecode.test.CheckoutTest@292b08d6</td></tr>
+<tr>
+<td title='com.saucecode.test.InventoryTest.textverify()'><b>textverify</b><br>Test class: com.saucecode.test.InventoryTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;header_container&apos;]//span[@class=&apos;title&apos;]&quot;}
+  (Session info: chrome=154.0.8037.93)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: &apos;4.45.0&apos;, revision: &apos;cd6a3cd cd6a3cdfca6970f62e5bc8344109d0fe0e2af05e&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;26.3.1&apos;, java.version: &apos;21.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [20a9718d2df7f960293c88d51d78806c, findElement {using=xpath, value=//*[@id=&apos;header_container&apos;]//span[@class=&apos;title&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.93, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: /var/folders/_x/s37vvg593d3...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56259}, goog:processID: 43904, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:56259/devtoo..., se:cdpVersion: 154.0.8037.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 20a9718d2df7f960293c88d51d78806c
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:575)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:173)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:396)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:390)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.getText(Unknown Source)
+	at com.saucecode.page.SauceInventoryPage.inventorytextverify(SauceInventoryPage.java:74)
+	at com.saucecode.test.InventoryTest.textverify(InventoryTest.java:20)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace622772003", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace622772003'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;header_container&apos;]//span[@class=&apos;title&apos;]&quot;}
+  (Session info: chrome=154.0.8037.93)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: &apos;4.45.0&apos;, revision: &apos;cd6a3cd cd6a3cdfca6970f62e5bc8344109d0fe0e2af05e&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;26.3.1&apos;, java.version: &apos;21.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [20a9718d2df7f960293c88d51d78806c, findElement {using=xpath, value=//*[@id=&apos;header_container&apos;]//span[@class=&apos;title&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.93, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: /var/folders/_x/s37vvg593d3...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56259}, goog:processID: 43904, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:56259/devtoo..., se:cdpVersion: 154.0.8037.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 20a9718d2df7f960293c88d51d78806c
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:575)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:173)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:396)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:390)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.getText(Unknown Source)
+	at com.saucecode.page.SauceInventoryPage.inventorytextverify(SauceInventoryPage.java:74)
+	at com.saucecode.test.InventoryTest.textverify(InventoryTest.java:20)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.saucecode.test.InventoryTest@c730b35</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.saucecode.test.InventoryTest.itemtocart()'><b>itemtocart</b><br>Test class: com.saucecode.test.InventoryTest</td>
+<td></td>
+<td>0</td>
+<td>com.saucecode.test.InventoryTest@c730b35</td></tr>
+<tr>
+<td title='com.saucecode.test.CartPageTest.buttonlist()'><b>buttonlist</b><br>Test class: com.saucecode.test.CartPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.saucecode.test.CartPageTest@206a70ef</td></tr>
+<tr>
+<td title='com.saucecode.test.SauceLoginTest.titleverification()'><b>titleverification</b><br>Test class: com.saucecode.test.SauceLoginTest</td>
+<td></td>
+<td>0</td>
+<td>com.saucecode.test.SauceLoginTest@7c7a06ec</td></tr>
+<tr>
+<td title='com.saucecode.test.SauceLoginTest.validlogin()'><b>validlogin</b><br>Test class: com.saucecode.test.SauceLoginTest</td>
+<td></td>
+<td>0</td>
+<td>com.saucecode.test.SauceLoginTest@7c7a06ec</td></tr>
+</table><p>
+</body>
+</html>
